@@ -1,0 +1,16 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <h1>Califique nuestro servicio:</h1>
+    
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" [ngModel]="opinion?.name">
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="lastName" [ngModel]="opinion?.lastName">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [ngModel]="opinion?.email">
+    
+    <label for="opinion">Denos su opinion honestamente<br> es muy importante para nosotros</label>
+    <textarea id="opinion" name="opinion" [ngModel]="opinion?.opinion"></textarea>
+    <button type="submit">Enviar opinion</button>
+</form>

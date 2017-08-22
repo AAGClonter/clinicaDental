@@ -1,0 +1,100 @@
+<section class="container-fluid">
+    <h1 id="header-especialidades">Nuestras especialidades</h1>
+    <p class="paragraph-specialties">En su primera visita, un profesional cualificado va a darle 
+        las mejores opciones de tratamiento que tiene a su disposición y le va a explicar qué es lo que se 
+        ajusta a sus necesidades. Contamos con un equipo cuya principal prioridad es su persona, 
+        su expectativa y la evaluación adecuada de su caso particular, bajo la mejor profesionalidad, 
+        atendiendo a todas sus dudas e inquietudes e informándole de cuáles son las opciones adecuadas.</p>
+    
+        <div class="row">
+            <div class="exodoncia col-md-4" (click)="onActive()" [ngStyle]="{'height': getHeight()}" 
+            [@especialidadesState]="especialidadesState">
+                    <p class="title">BLANQUEAMIENTO</p>
+                    <div *ngIf="isActive">
+                        <p class="hideFirst">El blanqueamiento dental es un procedimiento clinico que trata de 
+                            conseguir el aclaramiento del color de los dientes. En nuestra clinica contamos con 
+                            avanzadas tecnicas para que puedas recuperar el color de tus dientes y presumas de una 
+                            bonita sonrisa.</p>
+                        <img class="blanqueamiento"  
+                        src="http://www.terrassadentalclinic.com/wp-content/uploads/2014/10/antes-despues"
+                        >
+                    </div>
+            </div>
+    
+            <div class="protesis col-md-4" (click)="onActiveSecond()" [ngStyle]="{'height': getHeightSecond()}">
+                <p class="title">PROTESIS</p>
+                <div *ngIf="isActiveSecond"> 
+                    <p class="hideSecond"> La protesis bucal es una rama de la odontologia que se encarga de la 
+                        rehabilitacion de las funciones orales, recuperando tu sonrisa y comodidad, 
+                        con la realizacion adecuado tratamiento protesico. Ven a nuestra clinica y te brindaremos 
+                        las mejores soluciones para que vuelva a gozar de una sonrisa perfecta </p>
+                    <img class="protesis-images"  
+                    src="http://serviciodentalentijuana.com/principal/wp-content/uploads/2014/06/Protesis-remov-612-x-385-e1401814390621-512x277.jpg"
+                    >
+                    <img class="protesis-images1" 
+                    src="http://clinicasanasmile.es/wp-content/uploads/2015/02/protesis-dental-marbella.jpg"
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="implantes col-4" (click)="onActiveThird()" [ngStyle]="{'height': getHeightThird()}">
+                <p class="title">IMPLANTES</p>
+                <div *ngIf="isActiveThird">
+                    <p class="hideThird">Los implantes dentales se han considerado una forma efectiva para 
+                        remplazar los dientes perdidos, cada dia el numero de personas que lo utilizan aumenta. 
+                        Por lo que en nuestra clinica contamos con variedad de implantes y personal cualificado 
+                        en el tratamiento</p>
+                    <img class="implantes-images" 
+                    src="http://clinicadoctorvalderrama.com/wp-content/uploads/2015/06/1004-smileclinic-voordelen-van-een-implantaat-gedragen-prothese.jpg"
+                    >
+                    <img class="implantes-images1"  
+                    src="http://www.estrelladigital.es/media/estrelladigital/images/2016/02/17/2016021717143747005.jpg"
+                    >
+                </div>
+            </div>
+
+            <div class="ortodoncia col-4" (click)="onActiveFourth()" [ngStyle]="{'height': getHeightFourth()}">
+                <p class="title">ORTODONCIA</p>
+                <div *ngIf="isActiveFourth">
+                    <p class="hideForth" >Unete al club de las sonrisas perfectas!! Con nuestros tratamientos 
+                        eliminaremos problemas de maloclusion y apinamiento de forma rapida y comoda. 
+                        Especialistas en ortodoncia avanzada realizaran un plan de tratamiento que se ajuste 
+                        a sus necesidades.</p>
+                    <img class="ortodoncia-images"  
+                    src="http://www.institutoortodoncia.cl/images/ORTODONCIA_ml.jpg"
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="endodoncia col-4" (click)="onActiveFifth()" [ngStyle]="{'height': getHeightFifth()}">
+                <p class="title">ENDODONCIA</p>
+                <div *ngIf="isActiveFifth">
+                    <p class="hideFifth" >Con estos tratamientos nuestros expertos pretenden alargar la vida de 
+                        tus dientes, dandote una solucion inmediata y definitiva al dolor dentario mediante el 
+                        diagnostico y tratamiento de las enfermedades de origen pulpar.</p>
+                    <img class="endodoncia-images" 
+                    src="http://clinicadentalberges.com/wp-content/uploads/2014/12/endodoncia.jpg"
+                    >
+                    <img class="endodoncia-images1" 
+                    src="http://www.shinedental.in/images/root-canal-before-after.jpg"
+                    >
+                </div>
+            </div>
+    
+        
+            <div class="periodoncia col-4" (click)="onActiveSixth()" [ngStyle]="{'height': getHeightSixth()}">
+                <p class="title">PERIODONCIA</p>
+                <div *ngIf="isActiveSixth">
+                    <p class="hideSixth" >Esta relacionada con los tejidos que sostienen y protegen a nuestros 
+                        dientes, una incorrecta higiene dental estimula la aparicion de estas enfermadades. 
+                        En nuestra clinica contamos con tratamientos que pueden ayudar a eliminar tan indeseados 
+                        problemas, porque tu sonrisa cuenta. Visitanos!!</p>
+                    <img class="periodoncia-images" src="http://clinicadentalgrupocero.com/images/periodontitis.jpg"
+                    >
+                    <img class="periodoncia-images1" >
+                </div>
+            </div>
+        </div>
+</section>

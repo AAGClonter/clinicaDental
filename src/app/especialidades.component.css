@@ -1,0 +1,169 @@
+#header-especialidades {
+  color: #ff7373;
+  border-bottom: 1px solid #ff7373;
+  margin-left: 40px;
+  width: 66%;
+  font-weight: lighter;
+  font-size: 35px;
+  margin-left: 2%;
+  margin-right: 3%;
+}
+.paragraph-specialties {
+  margin-left: 40px;
+  margin-right: 40px;
+  color: #747573;
+}
+#list-especialidades {
+  list-style: none;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+#list-especialidades li {
+  display: inline-block;
+  text-align: center;
+}
+.derecha {
+    margin-left: 100px;
+}
+ .protesis, .ortodoncia, .endodoncia, .periodoncia {
+  background-color: #ff7373;
+  width: 302px;
+  margin-left: 100px;
+  margin-top: 100px; 
+  font-size: 20px;
+  border-radius: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 1px;
+}
+.implantes {
+  background-color: #ff7373;
+  width: 302px;
+  margin-left: 100px;
+  margin-top: 100px; 
+  font-size: 20px;
+  border-radius: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 1px;
+}
+.exodoncia{
+  background-color: #ff7373;
+  width: 302px;
+  margin-left: 100px;
+  margin-top: 100px; 
+  font-size: 20px;
+  border-radius: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 1px;
+}
+ .hideFirst, .hideSecond, .hideThird, .hideForth, .hideFifth, .hideSixth {
+  position:relative;
+  text-align: left;
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  margin-left: 30px;
+}
+.notActive {
+  height: 40px;
+}
+.title {
+  color: white;
+  text-align: left;
+  margin-left: 40px;
+  padding: 0;
+}
+.blanqueamiento {
+  width: 298px;
+  margin-right: 0px;
+  padding: 0;
+  border-bottom: 2px solid #ff7373;
+  border-right: 2px solid #ff7373;
+  border-left: 2px solid #ff7373;
+}
+
+.protesis-images {
+  width: 298px;
+  height: 170px;
+  margin-right: 0;
+  border-right: 2px solid #ff7373;
+  border-left: 2px solid #ff7373;
+}
+.protesis-images1 {
+  width: 298px;
+  height: 170px;
+  margin-right: 0;
+  border-top: 10px solid #ff7373;
+  border-right: 2px solid #ff7373;
+  border-left: 2px solid #ff7373;
+  border-bottom: 2px solid #ff7373;
+}
+
+.ortodoncia-images {
+  width: 298px;
+  margin-right: 0;
+  border-bottom: 2px solid #ff7373;
+  border-right: 2px solid #ff7373;
+  border-left: 2px solid #ff7373;
+}
+
+.implantes-images {
+  width: 298px;
+  height: 298px;
+  margin-right: 0;
+  border-right: 2px solid #ff7373;
+  border-left: 2px solid #ff7373;
+  border-bottom: 4px solid #ff7373;
+}
+
+.implantes-images1 {
+  width: 298px;
+  height: 170px;
+  margin-right: 0;
+  border-top: 2px solid #ff7373;
+  border-bottom: 2px solid #ff7373;
+  border-right: 2px solid #ff7373;
+  border-left: 2px solid #ff7373;
+}
+
+.endodoncia-images {
+  width: 300px;
+  height: 200px;
+  margin-right: -1px;
+  border-right: 2px solid #ff7373;
+  border-left: 2px solid #ff7373;
+  border-bottom: 4px solid #ff7373;
+}
+.endodoncia-images1 {
+  width: 298px;
+  height: 190px;
+  margin-right: 0;
+  border-top: 2px solid #ff7373;
+  border-bottom: 2px solid #ff7373;
+  border-right: 2px solid #ff7373;
+  border-left: 2px solid #ff7373;
+}
+
+.periodoncia-images {
+  width: 298px;
+  height: 170px;
+  margin-right: 0px;
+  border-bottom: 2px solid #ff7373;
+  border-right: 2px solid #ff7373;
+  border-left: 2px solid #ff7373;
+}
+
+.periodoncia-images1 {
+  width: 300px;
+  height: 160px;
+  margin-right: 0px;
+  border-top: 4px solid #ff7373;
+  border-bottom: 2px solid #ff7373;
+  border-right: 2px solid #ff7373;
+  border-left: 2px solid #ff7373;
+}
+section {
+  height: 90%;
+}

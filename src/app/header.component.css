@@ -1,0 +1,47 @@
+header {
+  background-color: white;
+  height: 100px;
+  padding-top: 1px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 3px solid #ff7373;
+
+}
+
+.picked {
+  background-color: #ff7373;
+  color: white;
+}
+
+#telefono {
+  position: absolute;
+  top: -6px;
+  margin-right: 25px;
+}
+
+header h1 {
+  position: relative;
+  padding-right: 25px;
+  display:inline-block;
+  color: #ff7373;
+  left: 6.7%;
+  font-weight: 100;
+  border-right: 1px solid #ff7373;
+}
+
+header h3 {
+  margin-right: 1.5%;
+  color: #ff7373;
+  position: absolute;
+  right: 70px;
+  top: 85px; 
+  font-weight: 100;
+  }
+
+.muela-image {
+  position: absolute;
+  top: 55px;
+  left: 6.5%;
+  width: 40px;
+  height: 54.4262295px;
+}

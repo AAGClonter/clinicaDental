@@ -1,0 +1,103 @@
+.horarios-wrapper {
+  width: 40%;
+  float: right;
+}
+
+.location {
+  color: #ff7373;
+  font-weight: 100;
+  border-bottom: 1px solid #ff7373;
+  width: 40%;
+  margin-left: 50px;
+}
+
+#paragraph-location {
+  color: #747573;
+  margin-left: 40px;
+  width: 60%;
+}
+
+.dr-wrapper {
+  float: left;
+}
+
+.dr-wrapper h3 {
+  color: #ff7373;
+  font-weight: 100;
+  margin-left: 50px;
+  border-bottom: 1px solid #ff7373;
+  width: 40%;
+}
+
+.numero-colegiado {
+  color: #ff7373;
+  margin-left: 40px;
+}
+
+.parrafo {
+  width: 40%;
+  color: #737574;
+  margin-left: 40px;
+}
+
+.telefono-callout {
+  color: #747573;
+  margin-left: 40px;
+}
+
+.telefono-callout span {
+  color: #ff7373;
+}
+
+.email {
+  color: #747573;
+  margin-left: 40px;
+}
+
+.email span {
+  color: #ff7373;
+}
+
+.horarios-wrapper {
+  float: left;
+  width: 40%;
+}
+
+.horarios {
+  color: #ff7373;
+  font-weight: 100;
+  border-bottom: 1px solid #ff7373;
+  width: 40%;
+}
+
+.website span {
+  color: #ff7373;
+}
+
+.website {
+  color: #737574;
+  margin-left: 40px;
+  display: block;
+}
+
+.horas-horarios {
+  color: #ff7373;
+}
+
+.mananas {
+  color: #737574;
+  padding-top: 10px;
+}
+
+.tardes {
+  color: #737475;
+  padding-top: 10px;
+}
+
+h3 {
+    display: block;
+}
+
+section {
+  height: 380px;
+}

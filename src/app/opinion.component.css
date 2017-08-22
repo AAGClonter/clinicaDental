@@ -1,0 +1,48 @@
+form {
+  margin-left: 60px;
+}
+
+form input, textarea {
+  border-radius: 5px;
+}
+
+form label, textarea {
+  display:block;
+  margin-top: 10px;
+}
+
+form textarea {
+  width: 60%;
+  height: 70px;
+}
+
+form button {
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1px solid #ff7373;
+  background-color: white;
+  color: #ff7373;
+}
+
+form button:hover {
+  background-color: #ff7373;
+  color: white;
+}
+
+form h1 {
+  color: #ff7373;
+  font-weight: 100;
+}
+
+form label {
+  color: #ff7373;
+}
+
+form input {
+  border: 1px solid #747375;
+  width: 300px;
+}
+
+form textarea {
+  border: 1px solid #747375;
+}
