@@ -8,11 +8,14 @@ const mongoose = require('mongoose');
 // Get our API routes
 const api = require('./server/routes/api');
 const personalRoutes = require('./server/personal');
+// user name and password mLab
+const dbUser = "inhaled-clonter";
+const dbPassword = "Shel4583";
 
 const app = express();
 
 // mongodb connection 
-mongoose.connect("localhost:27017/opiniondb");
+mongoose.connect(dbUser + ":" + dbPassword +"@ds161833.mlab.com:61833/opiniondb");
 var db = mongoose.connection;
 
 // mongo error
