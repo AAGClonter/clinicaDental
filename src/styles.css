@@ -15,12 +15,7 @@ body {
   padding: 0 5%;
 }
 
-nav ul li a:hover{
-  background-color: #ff7373;
-  color: white;
-}
-
-.active {
+.inUse {
   background-color: #ff7373;
   color: white;
 }

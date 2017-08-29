@@ -10,3 +10,43 @@ img {
 .border {
     border-bottom: 1px solid #ff7373;
 }
+
+.testeando {
+  float: left;
+  position:absolute;
+  margin-left: 0;
+  margin-top: 1px;
+  margin-bottom: 50px;
+  height: 399px;
+  width: 35%;
+  border-right: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+}
+
+.slogan {
+  color: #ff7373;
+  font-weight: 100;
+  padding: 0;
+  width: 85%;
+  margin-left: 40px;
+  margin-top: 70px;
+}
+
+.info {
+  margin-left: 40px;
+  margin-top: 40px;
+  width: 60px;
+  height: 25px;
+  border-radius: 5px;
+  color: white;
+  background-color: #ff7373;
+}
+
+h3 {
+  width: 85%;
+  margin-left: 40px;
+  padding-top: 40px;
+  color: #ff7373;
+  font-weight: 100;
+}
