@@ -24,6 +24,7 @@
     "body-parser": "^1.17.2",
     "core-js": "^2.4.1",
     "express": "^4.15.3",
+    "mongodb": "^2.2.31",
     "mongoose": "^4.10.6",
     "morgan": "^1.8.2",
     "nodemailer": "^4.0.1",
