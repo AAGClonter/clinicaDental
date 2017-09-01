@@ -12,7 +12,9 @@ const personalRoutes = require('./server/personal');
 const app = express();
 
 // mongodb connection 
-mongoose.connect("mongodb://inhaled-clonter:Shel4583@ds161833.mlab.com:61833/opiniondb");
+mongoose.connect("mongodb://inhaled-clonter:Shel4583@ds161833.mlab.com:61833/opiniondb", {
+  useMongoClient: true
+});
 var db = mongoose.connection;
 
 // mongo error
