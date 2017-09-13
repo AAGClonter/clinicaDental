@@ -62,3 +62,40 @@ footer h2 {
   padding-left: 700px;
   width: 185px;
 }
+@media screen and (min-width: 400px){
+  footer {
+    height: 260px;
+  }
+
+  .footer-mapa {
+    margin-right: 20px;
+  }
+
+  .under-mapa {
+    margin-right: -20px;
+  }
+
+  .under-especialidades {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 480px){
+  .viernes {
+    margin: 0;
+  }
+
+  .under-especialidades {
+    margin-bottom: 0;
+  }
+
+  footer {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 660px){
+  footer {
+    height: 235px;
+  }
+}

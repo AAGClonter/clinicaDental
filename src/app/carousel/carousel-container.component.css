@@ -35,7 +35,7 @@ img {
 
 .info {
   margin-left: 40px;
-  margin-top: 40px;
+  margin-top: 10px;
   width: 60px;
   height: 25px;
   border-radius: 5px;
@@ -50,3 +50,23 @@ h3 {
   color: #ff7373;
   font-weight: 100;
 }
+
+@media screen and (min-width: 400px) {
+  #myCarousel {
+    margin-top: 80px;
+    height: 300px;
+  }
+  .testeando {
+    display: none;
+  }
+
+  .carousel-inner {
+    height: 300px;
+  }
+}
+
+  @media screen and (min-width: 660px){
+    .testeando, .slogan, .info {
+    display: none;
+  }
+  }

@@ -101,3 +101,19 @@ h3 {
 section {
   height: 380px;
 }
+
+@media screen and (min-width: 400px){
+  section {
+    height: 800px;
+  }
+
+  .horarios-wrapper {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 480px){
+  section {
+    height: 730px;
+  }
+}
