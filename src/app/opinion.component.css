@@ -46,3 +46,9 @@ form input {
 form textarea {
   border: 1px solid #747375;
 }
+
+@media screen and (min-width: 400px) {
+  form {
+    margin-left: 40px;
+  }
+}
