@@ -52,3 +52,15 @@ form textarea {
     margin-left: 40px;
   }
 }
+
+@media screen and (min-width: 480px){
+  form {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (min-width: 660px){
+  form {
+    margin-top: 140px;
+  }
+}

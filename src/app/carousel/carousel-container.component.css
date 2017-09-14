@@ -65,8 +65,23 @@ h3 {
   }
 }
 
-  @media screen and (min-width: 660px){
+@media screen and (min-width: 480px){
+  #myCarousel {
+    margin-top: 65px;
+  }
+}
+
+@media screen and (min-width: 660px){
     .testeando, .slogan, .info {
     display: none;
   }
+
+  .carousel-inner {
+    height: 400px;
+    margin-top: 36px;
   }
+
+  #myCarousel {
+    margin-top: 0;
+  }
+}

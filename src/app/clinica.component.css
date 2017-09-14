@@ -117,3 +117,10 @@ section {
     height: 730px;
   }
 }
+
+@media screen and (min-width: 660px){
+  section {
+    height: 400px;
+    margin-top: 140px;
+  }
+}
