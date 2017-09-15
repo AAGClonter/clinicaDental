@@ -167,6 +167,11 @@
 section {
   height: 90%;
 }
+@media screen and (min-width: 320px) {
+  .exodoncia, .protesis, .implantes, .ortodoncia, .endodoncia, .periodoncia{
+    margin-left: 40px;
+  }
+}
 
 @media screen and (min-width: 400px) {
   .exodoncia, .protesis, .implantes, .ortodoncia, .endodoncia, .periodoncia{

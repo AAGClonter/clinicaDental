@@ -51,6 +51,20 @@ h3 {
   font-weight: 100;
 }
 
+@media screen and (min-width: 320px) {
+  #myCarousel {
+    margin-top: 80px;
+    height: 300px;
+  }
+  .testeando {
+    display: none;
+  }
+
+  .carousel-inner {
+    height: 300px;
+  }
+}
+
 @media screen and (min-width: 400px) {
   #myCarousel {
     margin-top: 80px;

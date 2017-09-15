@@ -39,7 +39,53 @@
     color: #ff7373;
     border: 1px solid #ff7373;
   }
+@media screen and (min-width: 320px){
+  nav {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
+  #home-list {
+    height: 45px;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    text-align: left;
+    margin-left: 0;
+    height: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 1px solid #ff7373;
+    border-bottom: 1px solid #ff7373;
+  }
+
+  ul li {
+    margin-top: 11px;
+    text-align: center;
+    display: inline-block; 
+    font-weight: 100;
+    height: 30px;
+  }
+
+  ul li a {
+    margin-right: -5px;
+    color: #ff7373;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    padding-right: 8px;
+    padding-left: 10px;
+  }
+
+  ul li a:hover {
+    color: white;
+    background-color: #ff7373;
+  }
+}
 
 @media screen and (min-width: 400px){
   nav {
