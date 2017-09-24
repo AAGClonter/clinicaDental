@@ -83,7 +83,7 @@
     padding-top: 15px;
     padding-bottom: 12px;
     padding-right: 8px;
-    padding-left: 10px;
+    padding-left: 4px;
   }
 
   ul li a:hover {
@@ -166,7 +166,7 @@
     margin-top: 4px;
     margin-bottom: 10px;
     padding-top: 12px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     padding-right: 10px;
     padding-left: 10px;
     height: 25px;
@@ -214,6 +214,6 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
 }
