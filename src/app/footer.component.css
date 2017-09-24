@@ -66,6 +66,9 @@ footer h2 {
   footer {
     height: 260px;
   }
+  .footer-especialidades {
+    margin-left: 20px;
+  }
 
   .footer-mapa {
     margin-right: 20px;
