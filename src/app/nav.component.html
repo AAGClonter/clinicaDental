@@ -1,7 +1,7 @@
 <nav>
     <div id="home-list">
         <ul>
-            <li><a routerLink="/home" routerLinkActive="inUse">Inicio</a></li>
+            <li><a routerLinkActive="inUse" [routerLinkActiveOptions]="{exact: true}" routerLink="/home" (click)="routerActive()">Inicio</a></li>
             <li><a routerLinkActive="inUse" routerLink="/especialidades">Especialidades</a></li>
             <li><a routerLinkActive="inUse" routerLink="/clinica">Clinica</a></li>
             <li><a routerLinkActive="inUse" routerLink="/opinion">Denos su opinion</a></li>

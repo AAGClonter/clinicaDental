@@ -1,6 +1,7 @@
 /*
   margin-left:5%;
   */
+  /*
 body {
   margin-bottom: 40px;
   width: 90%;
@@ -15,11 +16,7 @@ body {
   margin: 0 auto;
   padding: 0 5%;
 }
-
-.inUse {
-  background-color: #ff7373;
-  color: white;
-}
+*/
 
 @media screen and (min-width: 480px){
   

@@ -604,8 +604,8 @@ var NavRoutingModule = (function () {
 }());
 NavRoutingModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
-        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(routes)],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forRoot(routes)],
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
     })
 ], NavRoutingModule);
 
@@ -621,7 +621,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, " /* nav {\n    padding: 10px 0;\n  }\n*/\n/*\n  nav ul {\n    list-style: none;\n    margin: 0;\n    padding-top: 11px;\n    padding-bottom: 4px;\n    padding-left: 0;\n    text-align: left;\n    margin-left: 0;\n    border-top: 1px solid #ff7373;\n    border-bottom: 1px solid #ff7373;\n  }\n  */\n/*\n  nav ul li {\n    display: inline-block; \n    text-align: left;\n    font-weight: 100;\n    height: 30px;\n  }\n  */\n/*\n  nav ul li a {\n    text-decoration: none;\n    color: #ff7373;\n    margin-right: -5px;\n    padding-right: 40px;\n    padding-left: 40px;\n    padding-top: 14px;\n    padding-bottom: 14px;\n  }\n*/\n  button {\n    background-color: white;\n    color: #ff7373;\n    border: 1px solid #ff7373;\n  }\n@media screen and (min-width: 320px){\n  nav {\n    padding-top: 0;\n    padding-bottom: 0;\n  }\n\n  #home-list {\n    height: 45px;\n    width: 100%;\n  }\n  \n  nav ul {\n    list-style: none;\n    margin-top: 0;\n    padding-left: 0;\n    text-align: left;\n    margin-left: 0;\n    height: 45px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border-top: 1px solid #ff7373;\n    border-bottom: 1px solid #ff7373;\n  }\n\n  ul li {\n    margin-top: 11px;\n    text-align: center;\n    display: inline-block; \n    font-weight: 100;\n    height: 30px;\n  }\n\n  ul li a {\n    margin-right: -5px;\n    color: #ff7373;\n    text-decoration: none;\n    padding-top: 15px;\n    padding-bottom: 12px;\n    padding-right: 8px;\n    padding-left: 10px;\n  }\n\n  ul li a:hover {\n    color: white;\n    background-color: #ff7373;\n  }\n}\n\n@media screen and (min-width: 400px){\n  nav {\n    padding-top: 0;\n    padding-bottom: 0;\n  }\n\n  #home-list {\n    height: 45px;\n    width: 100%;\n  }\n  \n  nav ul {\n    list-style: none;\n    margin-top: 0;\n    padding-left: 0;\n    text-align: left;\n    margin-left: 0;\n    height: 45px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border-top: 1px solid #ff7373;\n    border-bottom: 1px solid #ff7373;\n  }\n\n  ul li {\n    margin-top: 11px;\n    text-align: center;\n    display: inline-block; \n    font-weight: 100;\n    height: 30px;\n  }\n\n  ul li a {\n    margin-right: -5px;\n    color: #ff7373;\n    text-decoration: none;\n    padding-top: 15px;\n    padding-bottom: 12px;\n    padding-right: 8px;\n    padding-left: 10px;\n  }\n\n  ul li a:hover {\n    color: white;\n    background-color: #ff7373;\n  }\n}\n\n@media screen and (min-width: 480px){\n  nav {\n    padding: 0;\n    height: 30px;\n  }\n\n   #home-list ul {\n     margin-top: 45px;\n     padding-top: 0;\n     padding-bottom: 0;\n     height: 40px;\n     border-top: 1px solid #ff7373;\n     border-bottom: 1px solid #ff7373;\n}\n\n  #home-list {\n    margin-top: 0;\n    padding: 0;\n  }\n\n  nav ul li a {\n    margin-top: 4px;\n    margin-bottom: 10px;\n    padding-top: 12px;\n    padding-bottom: 10px;\n    padding-right: 10px;\n    padding-left: 10px;\n    height: 25px;\n  }\n\n  nav ul li {\n    margin-top: 8px;\n    text-align: center;\n    height: 30px;\n    margin-bottom: 0;\n  }\n}\n\n@media screen and (min-width: 660px){\n\n  h3 {\n    margin-right: -3%;\n  }\n\n  nav {\n    margin-bottom: 10px;\n    margin-top: 16px;\n    width: 100%;\n    height: 40px;\n    padding-bottom: 30px;\n  }\n\n  #home-list {\n    padding-top: -5px;\n    padding-bottom: 10;\n    margin-bottom: 35px;\n    height: 40px;\n  }\n\n  #home-list ul {\n    margin-top: 0;\n    width: 100%;\n    height: 40px;\n    padding-bottom: 0;\n    border-top: 1px solid white;\n    border-bottom: 1px solid white;\n  }\n\n  nav ul li a {\n    margin-bottom: 20px;\n    padding-right: 20px;\n    padding-left: 20px;\n    padding-bottom: 10px;\n  }\n}\n", ""]);
+exports.push([module.i, " /* nav {\n    padding: 10px 0;\n  }\n*/\n/*\n  nav ul {\n    list-style: none;\n    margin: 0;\n    padding-top: 11px;\n    padding-bottom: 4px;\n    padding-left: 0;\n    text-align: left;\n    margin-left: 0;\n    border-top: 1px solid #ff7373;\n    border-bottom: 1px solid #ff7373;\n  }\n  */\n/*\n  nav ul li {\n    display: inline-block; \n    text-align: left;\n    font-weight: 100;\n    height: 30px;\n  }\n  */\n/*\n  nav ul li a {\n    text-decoration: none;\n    color: #ff7373;\n    margin-right: -5px;\n    padding-right: 40px;\n    padding-left: 40px;\n    padding-top: 14px;\n    padding-bottom: 14px;\n  }\n*/\n  ul li .inUse {\n  background-color: #ff7373;\n  color: white;\n}\n\n  button {\n    background-color: white;\n    color: #ff7373;\n    border: 1px solid #ff7373;\n  }\n@media screen and (min-width: 320px){\n  nav {\n    padding-top: 0;\n    padding-bottom: 0;\n  }\n\n  #home-list {\n    height: 45px;\n    width: 100%;\n  }\n  \n  nav ul {\n    list-style: none;\n    margin-top: 0;\n    padding-left: 0;\n    text-align: left;\n    margin-left: 0;\n    height: 45px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border-top: 1px solid #ff7373;\n    border-bottom: 1px solid #ff7373;\n  }\n\n  ul li {\n    margin-top: 11px;\n    text-align: center;\n    display: inline-block; \n    font-weight: 100;\n    height: 30px;\n  }\n\n  ul li a {\n    margin-right: -5px;\n    color: #ff7373;\n    text-decoration: none;\n    padding-top: 15px;\n    padding-bottom: 12px;\n    padding-right: 8px;\n    padding-left: 10px;\n  }\n\n  ul li a:hover {\n    color: white;\n    background-color: #ff7373;\n  }\n\n}\n\n@media screen and (min-width: 400px){\n  nav {\n    padding-top: 0;\n    padding-bottom: 0;\n  }\n\n  #home-list {\n    height: 45px;\n    width: 100%;\n  }\n  \n  nav ul {\n    list-style: none;\n    margin-top: 0;\n    padding-left: 0;\n    text-align: left;\n    margin-left: 0;\n    height: 45px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border-top: 1px solid #ff7373;\n    border-bottom: 1px solid #ff7373;\n  }\n\n  ul li {\n    margin-top: 11px;\n    text-align: center;\n    display: inline-block; \n    font-weight: 100;\n    height: 30px;\n  }\n\n  ul li a {\n    margin-right: -5px;\n    color: #ff7373;\n    text-decoration: none;\n    padding-top: 15px;\n    padding-bottom: 12px;\n    padding-right: 8px;\n    padding-left: 10px;\n  }\n/*\n  ul li a:hover {\n    color: white;\n    background-color: #ff7373;\n  }\n  */\n}\n\n@media screen and (min-width: 480px){\n  nav {\n    padding: 0;\n    height: 30px;\n  }\n\n   #home-list ul {\n     margin-top: 45px;\n     padding-top: 0;\n     padding-bottom: 0;\n     height: 40px;\n     border-top: 1px solid #ff7373;\n     border-bottom: 1px solid #ff7373;\n}\n\n  #home-list {\n    margin-top: 0;\n    padding: 0;\n  }\n\n  nav ul li a {\n    margin-top: 4px;\n    margin-bottom: 10px;\n    padding-top: 12px;\n    padding-bottom: 10px;\n    padding-right: 10px;\n    padding-left: 10px;\n    height: 25px;\n  }\n\n  nav ul li {\n    margin-top: 8px;\n    text-align: center;\n    height: 30px;\n    margin-bottom: 0;\n  }\n}\n\n@media screen and (min-width: 660px){\n\n  h3 {\n    margin-right: -3%;\n  }\n\n  nav {\n    margin-bottom: 10px;\n    margin-top: 16px;\n    width: 100%;\n    height: 40px;\n    padding-bottom: 30px;\n  }\n\n  #home-list {\n    padding-top: -5px;\n    padding-bottom: 10;\n    margin-bottom: 35px;\n    height: 40px;\n  }\n\n  #home-list ul {\n    margin-top: 0;\n    width: 100%;\n    height: 40px;\n    padding-bottom: 0;\n    border-top: 1px solid white;\n    border-bottom: 1px solid white;\n  }\n\n  nav ul li a {\n    margin-bottom: 20px;\n    padding-right: 20px;\n    padding-left: 20px;\n    padding-bottom: 10px;\n  }\n}\n", ""]);
 
 // exports
 
@@ -634,7 +634,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/nav.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav>\n    <div id=\"home-list\">\n        <ul>\n            <li><a routerLink=\"/home\" routerLinkActive=\"inUse\">Inicio</a></li>\n            <li><a routerLinkActive=\"inUse\" routerLink=\"/especialidades\">Especialidades</a></li>\n            <li><a routerLinkActive=\"inUse\" routerLink=\"/clinica\">Clinica</a></li>\n            <li><a routerLinkActive=\"inUse\" routerLink=\"/opinion\">Denos su opinion</a></li>\n        </ul>\n    </div>\n </nav>"
+module.exports = "<nav>\n    <div id=\"home-list\">\n        <ul>\n            <li><a routerLinkActive=\"inUse\" [routerLinkActiveOptions]=\"{exact: true}\" routerLink=\"/home\" (click)=\"routerActive()\">Inicio</a></li>\n            <li><a routerLinkActive=\"inUse\" routerLink=\"/especialidades\">Especialidades</a></li>\n            <li><a routerLinkActive=\"inUse\" routerLink=\"/clinica\">Clinica</a></li>\n            <li><a routerLinkActive=\"inUse\" routerLink=\"/opinion\">Denos su opinion</a></li>\n        </ul>\n    </div>\n </nav>"
 
 /***/ }),
 
@@ -644,16 +644,26 @@ module.exports = "<nav>\n    <div id=\"home-list\">\n        <ul>\n            <
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var NavComponent = (function () {
-    function NavComponent() {
+    function NavComponent(router) {
+        this.router = router;
+        this.isInUse = false;
     }
+    NavComponent.prototype.routerActive = function () {
+        this.isInUse = !this.isInUse;
+    };
     return NavComponent;
 }());
 NavComponent = __decorate([
@@ -661,9 +671,11 @@ NavComponent = __decorate([
         selector: 'app-nav',
         template: __webpack_require__("../../../../../src/app/nav.component.html"),
         styles: [__webpack_require__("../../../../../src/app/nav.component.css")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
 ], NavComponent);
 
+var _a;
 //# sourceMappingURL=nav.component.js.map
 
 /***/ }),
@@ -676,7 +688,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, "form {\n  margin-left: 60px;\n}\n\nform input, textarea {\n  border-radius: 5px;\n}\n\nform label, textarea {\n  display:block;\n  margin-top: 10px;\n}\n\nform textarea {\n  width: 60%;\n  height: 70px;\n}\n\nform button {\n  margin-top: 30px;\n  border-radius: 5px;\n  border: 1px solid #ff7373;\n  background-color: white;\n  color: #ff7373;\n}\n\nform button:hover {\n  background-color: #ff7373;\n  color: white;\n}\n\nform h1 {\n  color: #ff7373;\n  font-weight: 100;\n}\n\nform label {\n  color: #ff7373;\n}\n\nform input {\n  border: 1px solid #747375;\n  width: 300px;\n}\n\nform textarea {\n  border: 1px solid #747375;\n}\n\n@media screen and (min-width: 320px){\n  form {\n    margin-left: 40px;\n  }\n}\n\n@media screen and (min-width: 400px) {\n  form {\n    margin-left: 40px;\n  }\n}\n\n@media screen and (min-width: 480px){\n  form {\n    margin-left: 80px;\n  }\n}\n\n@media screen and (min-width: 660px){\n  form {\n    margin-top: 140px;\n  }\n}", ""]);
+exports.push([module.i, "form {\n  margin-left: 60px;\n}\n\nform input, textarea {\n  border-radius: 5px;\n}\n\nform label, textarea {\n  display:block;\n  margin-top: 10px;\n}\n\nform textarea {\n  width: 60%;\n  height: 70px;\n}\n\nform button {\n  margin-top: 30px;\n  border-radius: 5px;\n  border: 1px solid #ff7373;\n  background-color: white;\n  color: #ff7373;\n}\n\nform button:hover {\n  background-color: #ff7373;\n  color: white;\n}\n\nform h1 {\n  color: #ff7373;\n  font-weight: 100;\n}\n\nform label {\n  color: #ff7373;\n}\n\nform input {\n  border: 1px solid #747375;\n  width: 300px;\n}\n\nform textarea {\n  border: 1px solid #747375;\n}\n\n@media screen and (min-width: 320px){\n  form {\n    margin-left: 40px;\n  }\n}\n\n@media screen and (min-width: 400px) {\n  form {\n    margin-left: 40px;\n  }\n}\n\n@media screen and (min-width: 480px){\n  form {\n    margin-left: 80px;\n  }\n}\n\n@media screen and (min-width: 660px){\n  form {\n    margin-top: 80px;\n  }\n}", ""]);
 
 // exports
 

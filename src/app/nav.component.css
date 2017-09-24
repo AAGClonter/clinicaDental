@@ -34,6 +34,11 @@
     padding-bottom: 14px;
   }
 */
+  ul li .inUse {
+  background-color: #ff7373;
+  color: white;
+}
+
   button {
     background-color: white;
     color: #ff7373;
@@ -85,6 +90,7 @@
     color: white;
     background-color: #ff7373;
   }
+
 }
 
 @media screen and (min-width: 400px){
@@ -128,11 +134,12 @@
     padding-right: 8px;
     padding-left: 10px;
   }
-
+/*
   ul li a:hover {
     color: white;
     background-color: #ff7373;
   }
+  */
 }
 
 @media screen and (min-width: 480px){
