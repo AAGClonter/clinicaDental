@@ -105,4 +105,12 @@ footer h2 {
   footer {
     height: 235px;
   }
+
+  .footer-especialidades {
+    left: 4%;
+  }
+
+  .footer-mapa {
+    right: 4%;
+  }
 }
