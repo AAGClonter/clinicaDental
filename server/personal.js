@@ -47,6 +47,15 @@ router.post('/', function(req, res, next){
                         pass: "shel4583"
                     }
                 });
+
+                transporter.set('oauth2_provision_cb', (user, renew, callback)=>{
+                    let accessToken = userTokens[user];
+                    if(!accessToken){
+                        return callback(new Error('Unknown user'));
+                    }else{
+                        return callback(null, accessToken);
+                    }
+                });
                 //Creating mail optinos
                 var mailOptions = {
                     from: email.email, // sender address
