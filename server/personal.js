@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 
+const clientSecret = "P6FXYa6kDWFc-at9IHLUHhtU";
+const clientId = "867926266793-o6bs9ekc8ej77bq3go9tnkhbgqtnj6k2.apps.googleusercontent.com";
+
+
 const Opinion = require('../models/opinion');
 const Email = require('../models/email');
 
@@ -43,11 +47,12 @@ router.post('/', function(req, res, next){
                     port: 465,
                     secure: true,
                     auth: {
+                        type: 'OAuth2',
                         user: "sheldoneinsestein@gmail.com",
-                        pass: "shel4583"
+                        clientId: clientId,
+                        clientSecret: clientSecret 
                     }
                 });
-                /*
                 transporter.set('oauth2_provision_cb', (user, renew, callback)=>{
                     let accessToken = userTokens[user];
                     if(!accessToken){
@@ -56,7 +61,6 @@ router.post('/', function(req, res, next){
                         return callback(null, accessToken);
                     }
                 });
-                */
                 //Creating mail optinos
                 var mailOptions = {
                     from: email.email, // sender address
