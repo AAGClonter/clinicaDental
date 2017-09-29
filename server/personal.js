@@ -53,7 +53,7 @@ router.post('/', function(req, res, next){
                         clientSecret: clientSecret 
                     }
                 });
-                transporter.set('oauth2_provision_cb', (user, renew, callback)=>{
+                smtpTransport.set('oauth2_provision_cb', (user, renew, callback)=>{
                     let accessToken = userTokens[user];
                     if(!accessToken){
                         return callback(new Error('Unknown user'));

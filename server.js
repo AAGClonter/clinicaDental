@@ -15,6 +15,7 @@ const app = express();
 mongoose.connect("mongodb://inhaled-clonter:Shel4583@ds161833.mlab.com:61833/opiniondb", {
   useMongoClient: true
 });
+
 /*
 mongoose.connect("localhost:27017/signboxesdb");
 */
