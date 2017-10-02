@@ -50,12 +50,18 @@ router.post('/', function(req, res, next){
                     port: 465,
                     secure: true,
                     auth: {
-                        type: 'OAuth2',
+                        type: 'login',
                         user: "sheldoneinsestein@gmail.com",
-                        serviceClient: clientId,
-                        privateKey: privateKey 
+                        pass: 'shel4583'
                     }
                 });
+                smtpTransport.verify(function(error, success) {
+                    if (error) {
+                            console.log(error);
+                    } else {
+                            console.log('Server is ready to take our messages');
+                    }
+});
                 /*smtpTransport.set('oauth2_provision_cb', (user, renew, callback)=>{
                     let accessToken = userTokens[user];
                     if(!accessToken){
