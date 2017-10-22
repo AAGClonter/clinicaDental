@@ -1,42 +1,43 @@
-footer {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  margin-top: 50px;
-  height: 200px;
-  width: 100%;
-  border-top: 2px solid #ff7373;
-  border-bottom: 3px solid #ff7373;
-}
-
-footer p {
-  width: 35%;
-  margin-top: 30px;
-  margin-left: 40px;
-  margin-right: 0;
-  color: #747573;
-}
-
-footer h2 {
-  color: #ff7373;
-  font-weight:100;
-  margin-left: 40px;
-  border-bottom: 1px solid #ff7373;
-  width: 35%;
-  display: inline-block;
-}
-
 
 @media screen and (min-width: 320px){
   footer {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+    height: 200px;
+    width: 100%;
+    border-top: 2px solid #ff7373;
+    border-bottom: 3px solid #ff7373;
+  }
+
+  footer p {
+    width: 35%;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 0;
+    color: #747573;
+  }
+
+  footer h2 {
+  color: #ff7373;
+  width: 115px;
+  font-weight:100;
+  margin-left: 0;
+  border-bottom: 1px solid #ff7373;
+  display: inline-block;
+}
+
+  footer {
     height: 260px;
   }
-  .footer-especialidades {
+
+  footer .footer-especialidades {
     position: absolute;
     left: 0;
-    width: 0;
-    margin-left: 0;
+    width: 100px;
+    margin-left: 40px;
   }
 
   .footer-mapa {
@@ -99,6 +100,10 @@ footer h2 {
   footer {
     height: 250px;
   }
+
+  footer h2 {
+    width: 160px;
+  }
 }
 
 @media screen and (min-width: 660px){
@@ -106,11 +111,62 @@ footer h2 {
     height: 235px;
   }
 
-  .footer-especialidades {
-    left: 4%;
+  footer h2 {
+    width: 180px;
   }
 
-  .footer-mapa {
-    right: 4%;
+  footer .footer-especialidades {
+    width: 180px;
+    left: 40px;
+  }
+
+  footer .footer-mapa {
+    margin-right: 40px;
+  }
+
+  footer .under-mapa {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  footer .footer-especialidades {
+    width: 300px;
+  }
+
+  footer .footer-mapa {
+    width: 300px;
+    margin-right: 13%;
+  }
+}
+
+@media screen and (min-width: 1093px) {
+  footer .footer-mapa {
+    margin-right: 10%;
+  }
+
+  footer .footer-especialidades {
+    margin-left: 10%;
+  }
+
+  .under-especialidades {
+    margin-top: 10px;
+  }
+
+  .under-mapa {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  footer .footer-mapa {
+    margin-right: 18%;
+  }
+
+  footer .under-mapa {
+    margin-right: 10%;
   }
 }

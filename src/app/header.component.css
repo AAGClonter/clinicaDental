@@ -7,10 +7,7 @@
     border-top: 3px solid #ff7373;
   }
 */
-  .picked {
-    background-color: #ff7373;
-    color: white;
-  }
+
 /*
   #telefono {
     position: absolute;
@@ -182,7 +179,8 @@
 
 @media screen and (min-width: 660px){
   h1 {
-    margin-left: 3%;
+    padding-right: 60px;
+    margin-left: -30px;
   }
 
   h3 {
@@ -192,7 +190,7 @@
   }
 
   .muela-image {
-    margin-left: 0;
+    margin-left: 20px;
     position: absolute;
     top: 55px;
     width: 40px;
@@ -200,6 +198,7 @@
   }
 
   .cuidados {
+    position: absolute;
     margin-left: 270px;
     margin-right: 0;
   }
@@ -209,5 +208,32 @@
     right: 70px;
     position: absolute;
     margin-right: 1.5%;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  h1 {
+    margin-left: -60px;
+  }
+}
+
+@media screen and (min-width: 1093px) {
+
+  header h1 {
+    margin-left: -40px;
+  }
+
+  .muela-image {
+    margin-left: 100px;
+  }
+
+  header #telefono {
+    position: absolute;
+    margin-right: 160px;
+  }
+
+  header .cuidados {
+    position: absolute;
+    padding-right: 160px;
   }
 }
