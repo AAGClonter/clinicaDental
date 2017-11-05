@@ -5,6 +5,9 @@ const nodemailer = require('nodemailer');
 const Opinion = require('../models/opinion');
 const Email = require('../models/email');
 
+const clientID = '459612530252-22upbserlv47oc95utdhi11nq2o809bm.apps.googleusercontent.com';
+const clientSecret = 'nNXxJtQT5fjsmwu1GrwtDlFg';
+
 router.post('/', function(req, res, next){
     if (req.body.name &&
         req.body.lastName &&
@@ -43,12 +46,12 @@ router.post('/', function(req, res, next){
                     port: 465,
                     secure: true,
                     auth: {
-                        type: 'login',
+                        type: 'OAuth2',
                         user: "sheldoneinsestein@gmail.com",
-                        pass: 'shel4583'
-                    },
-                    tls: {
-                        rejectUnauthorized: false
+                        clientId: clientID,
+                        clientSecret: clientSecret,
+                        refreshToken: '',
+                        accessToken: ''
                     }
                 });
                 smtpTransport.verify(function(error, success) {
