@@ -17,7 +17,6 @@ import { OpinionComponent } from './opinion.component';
 import { CarouselComponent } from './carousel/carousel-container.component';
  
 import { OpinionService } from './opinion.service';
-import { CarouselService } from './carousel/carousel.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +38,7 @@ import { CarouselService } from './carousel/carousel.service';
     HttpModule,
     BrowserAnimationsModule
   ],
-  providers: [ OpinionService, CarouselService ],
+  providers: [ OpinionService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
