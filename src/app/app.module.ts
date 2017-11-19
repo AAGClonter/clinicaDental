@@ -15,6 +15,7 @@ import { PersonalComponent } from './personal.component';
 import { FooterComponent } from './footer.component';
 import { OpinionComponent } from './opinion.component';
 import { CarouselComponent } from './carousel/carousel-container.component';
+import { CarouselImageComponent } from './carousel/carousel-image.component';
  
 import { OpinionService } from './opinion.service';
 import { CarouselService } from './carousel/carousel.service';
@@ -31,6 +32,7 @@ import { CarouselService } from './carousel/carousel.service';
     FooterComponent,
     OpinionComponent,
     CarouselComponent,
+    CarouselImageComponent
   ],
   imports: [
     BrowserModule,

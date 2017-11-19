@@ -93,14 +93,16 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__footer_component__ = __webpack_require__("../../../../../src/app/footer.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__opinion_component__ = __webpack_require__("../../../../../src/app/opinion.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__carousel_carousel_container_component__ = __webpack_require__("../../../../../src/app/carousel/carousel-container.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__opinion_service__ = __webpack_require__("../../../../../src/app/opinion.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__carousel_carousel_service__ = __webpack_require__("../../../../../src/app/carousel/carousel.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__carousel_carousel_image_component__ = __webpack_require__("../../../../../src/app/carousel/carousel-image.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__opinion_service__ = __webpack_require__("../../../../../src/app/opinion.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__carousel_carousel_service__ = __webpack_require__("../../../../../src/app/carousel/carousel.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -137,6 +139,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_13__footer_component__["a" /* FooterComponent */],
             __WEBPACK_IMPORTED_MODULE_14__opinion_component__["a" /* OpinionComponent */],
             __WEBPACK_IMPORTED_MODULE_15__carousel_carousel_container_component__["a" /* CarouselComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__carousel_carousel_image_component__["a" /* CarouselImageComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -145,7 +148,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_4__angular_http__["c" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_16__opinion_service__["a" /* OpinionService */], __WEBPACK_IMPORTED_MODULE_17__carousel_carousel_service__["a" /* CarouselService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_17__opinion_service__["a" /* OpinionService */], __WEBPACK_IMPORTED_MODULE_18__carousel_carousel_service__["a" /* CarouselService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -224,6 +227,60 @@ CarouselComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=carousel-container.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/carousel/carousel-image.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CarouselImageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__carousel_model__ = __webpack_require__("../../../../../src/app/carousel/carousel.model.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CarouselImageComponent = (function () {
+    function CarouselImageComponent() {
+    }
+    return CarouselImageComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__carousel_model__["a" /* Carousel */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__carousel_model__["a" /* Carousel */]) === "function" && _a || Object)
+], CarouselImageComponent.prototype, "image", void 0);
+CarouselImageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'carousel-image',
+        template: "\n        <img src=\"{{image.addresse}}\" alt=\"{{image.image}}\">\n    "
+    })
+], CarouselImageComponent);
+
+var _a;
+//# sourceMappingURL=carousel-image.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/carousel/carousel.model.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Carousel; });
+var Carousel = (function () {
+    function Carousel(name, addresse) {
+    }
+    return Carousel;
+}());
+
+//# sourceMappingURL=carousel.model.js.map
 
 /***/ }),
 
