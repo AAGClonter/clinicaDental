@@ -94,12 +94,14 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__opinion_component__ = __webpack_require__("../../../../../src/app/opinion.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__carousel_carousel_container_component__ = __webpack_require__("../../../../../src/app/carousel/carousel-container.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__opinion_service__ = __webpack_require__("../../../../../src/app/opinion.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__carousel_carousel_service__ = __webpack_require__("../../../../../src/app/carousel/carousel.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -143,7 +145,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_4__angular_http__["c" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_16__opinion_service__["a" /* OpinionService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_16__opinion_service__["a" /* OpinionService */], __WEBPACK_IMPORTED_MODULE_17__carousel_carousel_service__["a" /* CarouselService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
