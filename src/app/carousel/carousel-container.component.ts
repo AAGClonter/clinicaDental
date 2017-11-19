@@ -20,7 +20,9 @@ export class CarouselComponent implements OnInit {
     getImages(){
         this.carouselService.gettingImages()
                             .subscribe(
-                                data => this.images = data
+                                (images: Carousel[]) => {
+                                    this.images = images;
+                                }
                             )
     }
 }

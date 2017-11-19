@@ -207,7 +207,9 @@ var CarouselComponent = (function () {
     CarouselComponent.prototype.getImages = function () {
         var _this = this;
         this.carouselService.gettingImages()
-            .subscribe(function (data) { return _this.images = data; });
+            .subscribe(function (images) {
+            _this.images = images;
+        });
     };
     return CarouselComponent;
 }());
