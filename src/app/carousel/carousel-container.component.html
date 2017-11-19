@@ -13,7 +13,7 @@
                 <a href=""><button class="info">Info</button></a>
             </div>
     <div class="carousel-item" *ngFor="let image of images;let first=first" [ngClass]="{active:first}">
-      <img class="d-block img-fluid" src="{{image.addresse}}" alt="First slide">
+      <img class="d-block img-fluid" src={{image.addresse}} alt="First slide">
     </div>
     <!--
     <div class="carousel-item">
