@@ -8,6 +8,19 @@ import { Carousel } from './carousel.model';
     templateUrl: 'carousel-container.component.html',
     styleUrls: ['carousel-container.component.css']
 })
-export class CarouselComponent {
+export class CarouselComponent implements OnInit {
+    images: Carousel[];
 
+    constructor(private carouselService: CarouselService){}
+
+    ngOnInit(){
+        this.getImages();
+    }
+
+    getImages(){
+        this.carouselService.gettingImages()
+                            .subscribe(
+                                data => this.images = data
+                            )
+    }
 }

@@ -173,7 +173,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/carousel/carousel-container.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"myCarousel\" class=\"carousel slide border\" data-ride=\"carousel\">\n  <ol class=\"carousel-indicators\">\n    <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n    <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n    <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n    <li data-target=\"#myCarousel\" data-slide-to=\"3\"></li>\n    <li data-target=\"#myCarousel\" data-slide-to=\"4\"></li>\n  </ol>\n  <div class=\"carousel-inner myClass\" role=\"listbox\">\n    <div class=\"testeando\">\n                <h1 class=\"slogan\">Todos los cuidados que tu boca necesita.</h1>\n                <h3>Con los mejores recursos disponibles y profesionales comprometidos</h3>\n                <a href=\"\"><button class=\"info\">Info</button></a>\n            </div>\n    <div class=\"carousel-item active\">\n      <img class=\"d-block img-fluid\" src=\"../assets/images/carousel-images/concordancia.png\" alt=\"First slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block img-fluid\" src=\"../assets/images/carousel-images/labios-BN-small.png\" alt=\"Second slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block img-fluid\" src=\"../assets/images/carousel-images/men.png\" alt=\"Third slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block img-fluid\" src=\"../assets/images/carousel-images/perfect.png\" alt=\"Third slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block img-fluid\" src=\"../assets/images/carousel-images/sombrerito.png\" alt=\"Third slide\">\n    </div>\n  </div>\n  <a class=\"carousel-control-prev\" href=\"#myCarousel\" role=\"button\" data-slide=\"prev\">\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Previous</span>\n  </a>\n  <a class=\"carousel-control-next\" href=\"#myCarousel\" role=\"button\" data-slide=\"next\">\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Next</span>\n  </a>\n</div>"
+module.exports = "<div id=\"myCarousel\" class=\"carousel slide border\" data-ride=\"carousel\">\n  <ol class=\"carousel-indicators\">\n    <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n    <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n    <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n    <li data-target=\"#myCarousel\" data-slide-to=\"3\"></li>\n    <li data-target=\"#myCarousel\" data-slide-to=\"4\"></li>\n  </ol>\n  <div class=\"carousel-inner myClass\" role=\"listbox\">\n    <div class=\"testeando\">\n                <h1 class=\"slogan\">Todos los cuidados que tu boca necesita.</h1>\n                <h3>Con los mejores recursos disponibles y profesionales comprometidos</h3>\n                <a href=\"\"><button class=\"info\">Info</button></a>\n            </div>\n    <div class=\"carousel-item\" *ngFor=\"let image of images;let first=first\" [ngClass]=\"{active:first}\">\n      <img class=\"d-block img-fluid\" src=\"{{image.addresse}}\" alt=\"First slide\">\n    </div>\n    <!--\n    <div class=\"carousel-item\">\n      <img class=\"d-block img-fluid\" src=\"../assets/images/carousel-images/labios-BN-small.png\" alt=\"Second slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block img-fluid\" src=\"../assets/images/carousel-images/men.png\" alt=\"Third slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block img-fluid\" src=\"../assets/images/carousel-images/perfect.png\" alt=\"Third slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block img-fluid\" src=\"../assets/images/carousel-images/sombrerito.png\" alt=\"Third slide\">\n    </div>\n    -->\n  </div>\n  <a class=\"carousel-control-prev\" href=\"#myCarousel\" role=\"button\" data-slide=\"prev\">\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Previous</span>\n  </a>\n  <a class=\"carousel-control-next\" href=\"#myCarousel\" role=\"button\" data-slide=\"next\">\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Next</span>\n  </a>\n</div>"
 
 /***/ }),
 
@@ -183,16 +183,30 @@ module.exports = "<div id=\"myCarousel\" class=\"carousel slide border\" data-ri
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CarouselComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__carousel_service__ = __webpack_require__("../../../../../src/app/carousel/carousel.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var CarouselComponent = (function () {
-    function CarouselComponent() {
+    function CarouselComponent(carouselService) {
+        this.carouselService = carouselService;
     }
+    CarouselComponent.prototype.ngOnInit = function () {
+        this.getImages();
+    };
+    CarouselComponent.prototype.getImages = function () {
+        var _this = this;
+        this.carouselService.gettingImages()
+            .subscribe(function (data) { return _this.images = data; });
+    };
     return CarouselComponent;
 }());
 CarouselComponent = __decorate([
@@ -200,9 +214,11 @@ CarouselComponent = __decorate([
         selector: 'app-carousel-container',
         template: __webpack_require__("../../../../../src/app/carousel/carousel-container.component.html"),
         styles: [__webpack_require__("../../../../../src/app/carousel/carousel-container.component.css")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__carousel_service__["a" /* CarouselService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__carousel_service__["a" /* CarouselService */]) === "function" && _a || Object])
 ], CarouselComponent);
 
+var _a;
 //# sourceMappingURL=carousel-container.component.js.map
 
 /***/ }),
