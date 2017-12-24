@@ -600,7 +600,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header>\n    <h3 id=\"telefono\">Cita previa: 954 635 136</h3>\n    <a>\n        <h1>Clínica Dental Castellanos</h1>\n        <h3 class=\"cuidados\">Los cuidados que su boca necesita</h3>\n        <img class=\"muela-image\" src=\"assets/images/header-image/IMG_3687.PNG\">\n    </a>\n    <app-nav></app-nav>\n</header>"
+module.exports = "<div class=\"container\">\n    <div class=\"row\">\n        <header>\n            <h3 id=\"telefono\">Cita previa: 954 635 136</h3>\n            <a>\n                <h1>Clínica Dental Castellanos</h1>\n                <h3 class=\"cuidados\">Los cuidados que su boca necesita</h3>\n                <img class=\"muela-image\" src=\"assets/images/header-image/IMG_3687.PNG\">\n            </a>\n            <app-nav></app-nav>\n        </header>\n    </div>\n</div>"
 
 /***/ }),
 
