@@ -1,3 +1,4 @@
+/*
 .horarios-wrapper {
   width: 40%;
   float: right;
@@ -9,6 +10,7 @@
   border-bottom: 1px solid #ff7373;
   width: 40%;
   margin-left: 50px;
+  margin-top: 60px;
 }
 
 #paragraph-location {
@@ -101,24 +103,50 @@ h3 {
 section {
   height: 380px;
 }
-
+*/
 @media screen and (min-width: 320px){
   section {
-    height: 835px;
+    height: 850px;
   }
 
-  .horarios-wrapper {
+  h1 {
+    color: #ff7373;
+    font-weight: 100;
+    margin-top: 60px;
     margin-left: 40px;
+    border-bottom: 1px solid #ff7373;
+  }
+
+  .direccion {
+    color: #737475;
+    width: 90%;
+    margin-left: 30px;
+  }
+
+  h2 {
+    color: #ff7373;
+    font-weight: 100;
+    margin-left: 40px;
+    border-bottom: 1px solid #ff7373;
+  }
+
+  span {
+    color: #ff7373;
+    margin-left: 30px;
+  }
+
+  p {
+    color: #737475;
+  }
+
+  .derecha {
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 400px){
   section {
-    height: 800px;
-  }
-
-  .horarios-wrapper {
-    margin-left: 40px;
+    height: 850px;
   }
 }
 

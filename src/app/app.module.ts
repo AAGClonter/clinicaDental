@@ -11,7 +11,6 @@ import { NavComponent } from './nav.component';
 import { HomeComponent } from './home.component';
 import { ClinicaComponent } from './clinica.component';
 import { EspecialidadesComponent } from './especialidades.component';
-import { PersonalComponent } from './personal.component';
 import { FooterComponent } from './footer.component';
 import { OpinionComponent } from './opinion.component';
 import { CarouselComponent } from './carousel/carousel-container.component';
@@ -28,7 +27,6 @@ import { CarouselService } from './carousel/carousel.service';
     HomeComponent,
     ClinicaComponent,
     EspecialidadesComponent,
-    PersonalComponent,
     FooterComponent,
     OpinionComponent,
     CarouselComponent,

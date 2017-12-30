@@ -1,78 +1,34 @@
 
 @media screen and (min-width: 320px){
   footer {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 50px;
     height: 200px;
     width: 100%;
+    margin-top: 20px;
     border-top: 2px solid #ff7373;
     border-bottom: 3px solid #ff7373;
   }
 
   footer p {
-    width: 35%;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 0;
     color: #747573;
+    margin-left: 20px;
   }
 
   footer h2 {
   color: #ff7373;
-  width: 115px;
   font-weight:100;
-  margin-left: 0;
+  width: 150px;
+  margin-left: 20px;
   border-bottom: 1px solid #ff7373;
-  display: inline-block;
 }
-
-  footer {
-    height: 260px;
-  }
-
-  footer .footer-especialidades {
-    position: absolute;
-    left: 0;
-    width: 100px;
-    margin-left: 40px;
-  }
-
-  .footer-mapa {
-    position: absolute;
-    right: 20px;
-    margin-top: 20px;
-    padding-right: 20px;
-    width: 0;
-  }
-
-  .under-mapa {
-    position: absolute;
-    float: right;
-    right: 0;
-    width: 25%;
-    margin-right: 0;
-    padding-top: 60px;
-    padding-left: 0;
-    padding-right: 30px;
-  }
-
-  .under-especialidades {
-    position: absolute;
-    margin-right: 0;
-    margin-top: 100px;
-    padding-top: 40px;
-    display: inline-block;
-  }
-  .viernes {
-    padding-top: 120px;
-  }
 }
+/*
 @media screen and (min-width: 400px){
   footer {
-    height: 260px;
+    height: 200px;
+  }
+
+  footer h2 {
+    width: 60px;
   }
 
   .footer-mapa {
@@ -87,7 +43,7 @@
     margin-right: 0;
   }
 }
-
+*//*
 @media screen and (min-width: 480px){
   .viernes {
     margin: 0;
@@ -101,18 +57,11 @@
     height: 250px;
   }
 
-  footer h2 {
-    width: 160px;
-  }
 }
-
+*/ /*
 @media screen and (min-width: 660px){
   footer {
     height: 235px;
-  }
-
-  footer h2 {
-    width: 180px;
   }
 
   footer .footer-especialidades {
@@ -170,3 +119,4 @@
     margin-right: 10%;
   }
 }
+*/

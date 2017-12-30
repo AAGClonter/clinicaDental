@@ -13,21 +13,27 @@ import {
     styleUrls: ['especialidades.component.css'],
     animations: [
         trigger('especialidadesState', [
-            state('void', style({
-                'transform': 'translateY(-100%)'
+            state('in', style({
+                opacity: 1
             })),
-            state('inactive', style({
-                display: 'none'
-            })),
-            state('active', style({
-                
-            })),
-            transition('* => *', animate(500))
+            transition('void => in', [
+                style({
+                    opacity: 0.5,
+                    height: '80px'
+                }),
+                animate('500ms ease-in')
+            ]),
+            transition('in => void', [
+                animate(500, style({
+                    opacity: 0,
+                    height: '0px'
+                }))
+            ])
         ])
     ]
 })
 export class EspecialidadesComponent {
-    especialidadesState;
+    state = 'void';
     isActive: boolean = false;
     isActiveSecond: boolean = false;
     isActiveThird: boolean = false;
@@ -35,8 +41,13 @@ export class EspecialidadesComponent {
     isActiveFifth: boolean = false;
     isActiveSixth: boolean = false;
 
+    toggleState() {
+        this.state == 'void' ? this.state = 'in' : this.state = 'void';
+    }
+
     onActive(){
         this.isActive = !this.isActive;
+        this.toggleState();
     }
 
     onActiveSecond(){

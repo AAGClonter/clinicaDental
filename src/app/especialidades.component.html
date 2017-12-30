@@ -7,10 +7,9 @@
         atendiendo a todas sus dudas e inquietudes e informándole de cuáles son las opciones adecuadas.</p>
     
         <div class="row">
-            <div class="exodoncia col-md-4" (click)="onActive()" [ngStyle]="{'height': getHeight()}" 
-            [@especialidadesState]="especialidadesState">
+            <div class="exodoncia col-md-4" (click)="onActive()" [ngStyle]="{'height': getHeight()}">
                     <p class="title">BLANQUEAMIENTO</p>
-                    <div *ngIf="isActive">
+                    <div *ngIf="isActive" [@especialidadesState]="state">
                         <p class="hideFirst">El blanqueamiento dental es un procedimiento clinico que trata de 
                             conseguir el aclaramiento del color de los dientes. En nuestra clinica contamos con 
                             avanzadas tecnicas para que puedas recuperar el color de tus dientes y presumas de una 
@@ -18,7 +17,8 @@
                     </div>
             </div>
     
-            <div class="protesis col-md-4" (click)="onActiveSecond()" [ngStyle]="{'height': getHeightSecond()}">
+            <div class="protesis col-md-4" (click)="onActiveSecond()" [ngStyle]="{'height': getHeightSecond()}"
+            >
                 <p class="title">PROTESIS</p>
                 <div *ngIf="isActiveSecond"> 
                     <p class="hideSecond"> La protesis bucal es una rama de la odontologia que se encarga de la 
@@ -29,7 +29,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="implantes col-md-4" (click)="onActiveThird()" [ngStyle]="{'height': getHeightThird()}">
+            <div class="implantes col-md-4" (click)="onActiveThird()" [ngStyle]="{'height': getHeightThird()}"
+            >
                 <p class="title">IMPLANTES</p>
                 <div *ngIf="isActiveThird">
                     <p class="hideThird">Los implantes dentales se han considerado una forma efectiva para 
@@ -39,7 +40,8 @@
                 </div>
             </div>
 
-            <div class="ortodoncia col-md-4" (click)="onActiveFourth()" [ngStyle]="{'height': getHeightFourth()}">
+            <div class="ortodoncia col-md-4" (click)="onActiveFourth()" [ngStyle]="{'height': getHeightFourth()}"
+            >
                 <p class="title">ORTODONCIA</p>
                 <div *ngIf="isActiveFourth">
                     <p class="hideForth" >Unete al club de las sonrisas perfectas!! Con nuestros tratamientos 
@@ -50,7 +52,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="endodoncia col-md-4" (click)="onActiveFifth()" [ngStyle]="{'height': getHeightFifth()}">
+            <div class="endodoncia col-md-4" (click)="onActiveFifth()" [ngStyle]="{'height': getHeightFifth()}"
+            >
                 <p class="title">ENDODONCIA</p>
                 <div *ngIf="isActiveFifth">
                     <p class="hideFifth" >Con estos tratamientos nuestros expertos pretenden alargar la vida de 
@@ -60,7 +63,8 @@
             </div>
     
         
-            <div class="periodoncia col-md-4" (click)="onActiveSixth()" [ngStyle]="{'height': getHeightSixth()}">
+            <div class="periodoncia col-md-4" (click)="onActiveSixth()" [ngStyle]="{'height': getHeightSixth()}"
+            >
                 <p class="title">PERIODONCIA</p>
                 <div *ngIf="isActiveSixth">
                     <p class="hideSixth" >Esta relacionada con los tejidos que sostienen y protegen a nuestros 
