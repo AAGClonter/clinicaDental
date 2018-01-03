@@ -10,6 +10,15 @@
     margin-left: 1px;
     border-top: 3px solid #ff7373;
   }
+    #telefono {
+      top: -6px;
+      position: absolute;
+      margin-left: 50px;
+      margin-right: 0;
+      color: #ff7373;
+      font-weight: 100;
+      width: 60%;
+  }
   .muela-image {
     margin-left: 40%;
     position: absolute;
@@ -29,16 +38,6 @@
 
   .cuidados {
     display: none;
-  }
-
-  #telefono {
-    top: -6px;
-    padding-right: 0;
-    position: absolute;
-    margin-left: 50px;
-    margin-right: 0;
-    margin-top: 20px;
-    width: 60%;
   }
 }
 
