@@ -25,8 +25,8 @@ import {
             ]),
             transition('in => void', [
                 animate(500, style({
-                    opacity: 0,
-                    height: '0px'
+                    opacity: 1,
+                    height: '30px'
                 }))
             ])
         ])
