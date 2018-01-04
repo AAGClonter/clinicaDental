@@ -48,17 +48,9 @@
   nav {
     padding-top: 0;
     padding-bottom: 0;
+    margin-left: 16px;
   }
-/*
-  #home-list ul {
-     margin-top: 45px;
-     padding-top: 0;
-     padding-bottom: 0;
-     height: 40px;
-     border-top: 1px solid #ff7373;
-     border-bottom: 1px solid #ff7373;
-}
-*/
+
   #home-list {
     height: 45px;
     width: 100%;

@@ -51,8 +51,9 @@ h3 {
 
 @media screen and (min-width: 320px) {
   #myCarousel {
-    height: 400px;
+    height: 200px;
     width: 100%;
+    margin-top: 82px;
   }
   .testeando {
     display: none;

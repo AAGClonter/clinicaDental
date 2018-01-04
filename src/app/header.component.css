@@ -13,11 +13,10 @@
     #telefono {
       top: -6px;
       position: absolute;
-      margin-left: 50px;
-      margin-right: 0;
       color: #ff7373;
       font-weight: 100;
-      width: 60%;
+      width: 100%;
+      margin-left: 25%;
   }
   .muela-image {
     margin-left: 40%;
@@ -33,7 +32,7 @@
     font-weight: 100;
     position: relative;
     margin-top: 75px;
-    margin-left: 6%;
+    margin-left: 10%;
   }
 
   .cuidados {

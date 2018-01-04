@@ -288,7 +288,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, "\n@media screen and (min-width: 400px) {\n  body {\n    margin-bottom: 40px;\n    width: 100%;\n    height:99%;\n    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .8);\n  }\n}\n\n@media screen and (min-width: 480px){\n  \n  body {\n    width: 100%;\n  }\n}\n\n@media screen and (min-width: 660px){\n  \n  body {\n  margin-bottom: 40px;\n  width: 100%;\n  height:99%;\n  border-right: 1px solid #747573;\n  border-left: 1px solid #747573;\n  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .8);\n}\n}\n\n@media screen and (min-width: 660px){\n  body {\n    width: 90%;\n  }\n}\n\n@media screen and (min-width: 1093px){\n  body {\n    width: 980px;\n  }\n}", ""]);
+exports.push([module.i, "@media screen and (min-width: 320px) {\n  body {\n    margin-bottom: 40px;\n    width: 100%;\n    height:99%;\n    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .8);\n  }\n}\n\n@media screen and (min-width: 400px) {\n  body {\n    margin-bottom: 40px;\n    width: 100%;\n    height:99%;\n    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .8);\n  }\n}\n\n@media screen and (min-width: 480px){\n  \n  body {\n    width: 100%;\n  }\n}\n\n@media screen and (min-width: 660px){\n  \n  body {\n  margin-bottom: 40px;\n  width: 100%;\n  height:99%;\n  border-right: 1px solid #747573;\n  border-left: 1px solid #747573;\n  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .8);\n}\n}\n\n@media screen and (min-width: 660px){\n  body {\n    width: 90%;\n  }\n}\n\n@media screen and (min-width: 1093px){\n  body {\n    width: 980px;\n  }\n}", ""]);
 
 // exports
 
