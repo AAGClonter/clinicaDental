@@ -9,8 +9,8 @@
         <div class="row">
             <div class="exodoncia col-md-4" (click)="onActive()" [ngStyle]="{'height': getHeight()}">
                     <p class="title">BLANQUEAMIENTO</p>
-                    <div *ngIf="isActive" [@especialidadesState]="state">
-                        <p class="hideFirst">El blanqueamiento dental es un procedimiento clinico que trata de 
+                    <div *ngIf="isActive">
+                        <p class="hideFirst" [@especialidadesState]="state">El blanqueamiento dental es un procedimiento clinico que trata de 
                             conseguir el aclaramiento del color de los dientes. En nuestra clinica contamos con 
                             avanzadas tecnicas para que puedas recuperar el color de tus dientes y presumas de una 
                             bonita sonrisa.</p>

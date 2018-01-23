@@ -20401,14 +20401,14 @@ function __asyncValues(o) {
 /* unused harmony export query */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return sequence; });
 /* unused harmony export stagger */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return state; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return style; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return transition; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return trigger; });
+/* unused harmony export state */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return style; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return transition; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return trigger; });
 /* unused harmony export useAnimation */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return NoopAnimationPlayer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return AnimationGroupPlayer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return ɵPRE_STYLE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return AnimationGroupPlayer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return ɵPRE_STYLE; });
 /**
  * @license Angular v4.4.0-RC.0
  * (c) 2010-2017 Google, Inc. https://angular.io/
@@ -21746,7 +21746,7 @@ function optimizeGroupPlayer(players) {
         case 1:
             return players[0];
         default:
-            return new __WEBPACK_IMPORTED_MODULE_1__angular_animations__["k" /* ɵAnimationGroupPlayer */](players);
+            return new __WEBPACK_IMPORTED_MODULE_1__angular_animations__["j" /* ɵAnimationGroupPlayer */](players);
     }
 }
 function normalizeKeyframes(driver, normalizer, element, keyframes, preStyles, postStyles) {
@@ -21766,7 +21766,7 @@ function normalizeKeyframes(driver, normalizer, element, keyframes, preStyles, p
             if (prop !== 'offset') {
                 normalizedProp = normalizer.normalizePropertyName(normalizedProp, errors);
                 switch (normalizedValue) {
-                    case __WEBPACK_IMPORTED_MODULE_1__angular_animations__["l" /* ɵPRE_STYLE */]:
+                    case __WEBPACK_IMPORTED_MODULE_1__angular_animations__["k" /* ɵPRE_STYLE */]:
                         normalizedValue = preStyles[prop];
                         break;
                     case __WEBPACK_IMPORTED_MODULE_1__angular_animations__["a" /* AUTO_STYLE */]:
@@ -22742,7 +22742,7 @@ var AnimationAstBuilderVisitor = (function () {
         var /** @type {?} */ timingAst = constructTimingAst(metadata.timings, context.errors);
         context.currentAnimateTimings = timingAst;
         var /** @type {?} */ styles;
-        var /** @type {?} */ styleMetadata = metadata.styles ? metadata.styles : Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({});
+        var /** @type {?} */ styleMetadata = metadata.styles ? metadata.styles : Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* style */])({});
         if (styleMetadata.type == 5 /* Keyframes */) {
             styles = this.visitKeyframes(/** @type {?} */ (styleMetadata), context);
         }
@@ -22755,7 +22755,7 @@ var AnimationAstBuilderVisitor = (function () {
                 if (timingAst.easing) {
                     newStyleData['easing'] = timingAst.easing;
                 }
-                styleMetadata_1 = Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])(newStyleData);
+                styleMetadata_1 = Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* style */])(newStyleData);
             }
             context.currentTime += timingAst.duration + timingAst.delay;
             var /** @type {?} */ styleAst = this.visitStyle(styleMetadata_1, context);
@@ -23979,7 +23979,7 @@ var TimelineBuilder = (function () {
             var /** @type {?} */ finalKeyframe = copyStyles(keyframe, true);
             Object.keys(finalKeyframe).forEach(function (prop) {
                 var /** @type {?} */ value = finalKeyframe[prop];
-                if (value == __WEBPACK_IMPORTED_MODULE_1__angular_animations__["l" /* ɵPRE_STYLE */]) {
+                if (value == __WEBPACK_IMPORTED_MODULE_1__angular_animations__["k" /* ɵPRE_STYLE */]) {
                     preStyleProps.add(prop);
                 }
                 else if (value == __WEBPACK_IMPORTED_MODULE_1__angular_animations__["a" /* AUTO_STYLE */]) {
@@ -25716,7 +25716,7 @@ var TransitionAnimationEngine = (function () {
         });
         // PRE STAGE: fill the ! styles
         var preStylesMap = (allPreStyleElements.size ?
-            cloakAndComputeStyles(this.driver, enterNodesWithoutAnimations, allPreStyleElements, __WEBPACK_IMPORTED_MODULE_1__angular_animations__["l" /* ɵPRE_STYLE */]) :
+            cloakAndComputeStyles(this.driver, enterNodesWithoutAnimations, allPreStyleElements, __WEBPACK_IMPORTED_MODULE_1__angular_animations__["k" /* ɵPRE_STYLE */]) :
             [new Map()])[0];
         replaceNodes.forEach(function (node) {
             var /** @type {?} */ post = postStylesMap.get(node);
@@ -26377,7 +26377,7 @@ function flattenGroupPlayers(players) {
 function _flattenGroupPlayersRecur(players, finalPlayers) {
     for (var /** @type {?} */ i = 0; i < players.length; i++) {
         var /** @type {?} */ player = players[i];
-        if (player instanceof __WEBPACK_IMPORTED_MODULE_1__angular_animations__["k" /* ɵAnimationGroupPlayer */]) {
+        if (player instanceof __WEBPACK_IMPORTED_MODULE_1__angular_animations__["j" /* ɵAnimationGroupPlayer */]) {
             _flattenGroupPlayersRecur(player.players, finalPlayers);
         }
         else {
