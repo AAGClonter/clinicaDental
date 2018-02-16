@@ -21,7 +21,7 @@
             >
                 <p class="title">PROTESIS</p>
                 <div *ngIf="isActiveSecond"> 
-                    <p class="hideSecond"> La protesis bucal es una rama de la odontologia que se encarga de la 
+                    <p class="hideSecond" [@especialidadesState]="state"> La protesis bucal es una rama de la odontologia que se encarga de la 
                         rehabilitacion de las funciones orales, recuperando tu sonrisa y comodidad, 
                         con la realizacion adecuado tratamiento protesico. Ven a nuestra clinica y te brindaremos 
                         las mejores soluciones para que vuelva a gozar de una sonrisa perfecta </p>
@@ -33,7 +33,7 @@
             >
                 <p class="title">IMPLANTES</p>
                 <div *ngIf="isActiveThird">
-                    <p class="hideThird">Los implantes dentales se han considerado una forma efectiva para 
+                    <p class="hideThird" [@especialidadesState]="state">Los implantes dentales se han considerado una forma efectiva para 
                         remplazar los dientes perdidos, cada dia el numero de personas que lo utilizan aumenta. 
                         Por lo que en nuestra clinica contamos con variedad de implantes y personal cualificado 
                         en el tratamiento</p>
@@ -44,7 +44,7 @@
             >
                 <p class="title">ORTODONCIA</p>
                 <div *ngIf="isActiveFourth">
-                    <p class="hideForth" >Unete al club de las sonrisas perfectas!! Con nuestros tratamientos 
+                    <p class="hideForth" [@especialidadesState]="state">Unete al club de las sonrisas perfectas!! Con nuestros tratamientos 
                         eliminaremos problemas de maloclusion y apinamiento de forma rapida y comoda. 
                         Especialistas en ortodoncia avanzada realizaran un plan de tratamiento que se ajuste 
                         a sus necesidades.</p>
@@ -55,7 +55,7 @@
             <div class="endodoncia col-md-4" (click)="onActiveFifth()" [ngStyle]="{'height': getHeightFifth()}"
             >
                 <p class="title">ENDODONCIA</p>
-                <div *ngIf="isActiveFifth">
+                <div *ngIf="isActiveFifth" [@especialidadesState]="state">
                     <p class="hideFifth" >Con estos tratamientos nuestros expertos pretenden alargar la vida de 
                         tus dientes, dandote una solucion inmediata y definitiva al dolor dentario mediante el 
                         diagnostico y tratamiento de las enfermedades de origen pulpar.</p>
@@ -67,7 +67,7 @@
             >
                 <p class="title">PERIODONCIA</p>
                 <div *ngIf="isActiveSixth">
-                    <p class="hideSixth" >Esta relacionada con los tejidos que sostienen y protegen a nuestros 
+                    <p class="hideSixth" [@especialidadesState]="state">Esta relacionada con los tejidos que sostienen y protegen a nuestros 
                         dientes, una incorrecta higiene dental estimula la aparicion de estas enfermadades. 
                         En nuestra clinica contamos con tratamientos que pueden ayudar a eliminar tan indeseados 
                         problemas, porque tu sonrisa cuenta. Visitanos!!</p>

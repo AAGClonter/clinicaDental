@@ -110,6 +110,10 @@ h3 {
     display: none;
   }
 
+  #myCarousel {
+    width: 100%;
+  }
+
   .carousel-inner {
     height: 400px;
     margin-top: 36px;

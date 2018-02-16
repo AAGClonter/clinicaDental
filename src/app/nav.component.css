@@ -12,14 +12,16 @@
 @media screen and (min-width: 320px){
   nav {
     height: 45px;
-    width: 100%;
+    width: 400px;
+    margin-left: 30px;
+    padding: 0;
+    border-top: 1px solid #ff7373;
+    border-bottom: 1px solid #ff7373;
   }
   
   nav ul {
     height: 45px;
-    border-top: 1px solid #ff7373;
-    border-bottom: 1px solid #ff7373;
-    width: 100%;
+    margin-left: 0;
     padding: 0;
   }
 
@@ -32,7 +34,6 @@
     color: #ff7373;
     padding-bottom: 12px;
     padding-right: 13px;
-    margin-left: -5px;
   }
 
   ul li a:hover {
@@ -43,78 +44,61 @@
 }
 
 @media screen and (min-width: 400px){
+ 
   nav {
-    width: 100%;
+    width: 480px;
   }
 
-  
-  nav ul {
-    height: 45px;
-    width: 100%;
-  }
-/*
   ul li {
-    margin-top: 11px;
     text-align: center;
-    display: inline-block; 
     font-weight: 100;
-    height: 30px;
   }
 
   ul li a {
-    margin-right: -5px;
     color: #ff7373;
     text-decoration: none;
+    padding-right: 20px;
   }
-  */
+  
 }
-/*
+
 @media screen and (min-width: 480px){
   nav {
     margin-top: 37px;
     padding: 0;
-    height: 30px;
-    width: 100%;
+    width: 660px;
   }
 
   nav ul {
     width: 100%;
   }
-  */
-/*
-  nav ul li a {
-    margin-top: 4px;
-    margin-bottom: 10px;
-    height: 30px;
-  }
-
+  
   nav ul li {
-    margin-top: 8px;
     text-align: center;
     height: 30px;
     margin-bottom: 0;
+    padding-bottom: 10px;
   }
-  */
-  /*
+ 
 }
-*/
-/*
-@media screen and (min-width: 660px){
 
+@media screen and (min-width: 660px){
   h3 {
-    margin-right: -3%;
+    margin-right: 0;
   }
 
   nav {
     margin-bottom: 10px;
+    margin-left: 20px;
     margin-top: 16px;
-    width: 100%;
+    width: 660px;
     height: 40px;
     padding-bottom: 30px;
   }
 
    ul {
     margin-top: 0;
+    margin-left: 20px;
     width: 100%;
     height: 40px;
     padding-bottom: 0;
@@ -126,4 +110,4 @@
     margin-bottom: 20px;
   }
 }
-*/
+

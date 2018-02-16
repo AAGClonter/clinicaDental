@@ -53,22 +53,27 @@ export class EspecialidadesComponent {
 
     onActiveSecond(){
         this.isActiveSecond = !this.isActiveSecond;
+        this.toggleState();
     }
 
     onActiveThird(){
         this.isActiveThird = !this.isActiveThird;
+        this.toggleState();
     }
 
     onActiveFourth(){
         this.isActiveFourth = !this.isActiveFourth;
+        this.toggleState();
     }
 
     onActiveFifth(){
         this.isActiveFifth = !this.isActiveFifth;
+        this.toggleState();
     }
 
     onActiveSixth(){
         this.isActiveSixth = !this.isActiveSixth;
+        this.toggleState();
     }
 
     getHeight(){
