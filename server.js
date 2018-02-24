@@ -41,7 +41,6 @@ app.use(function (req, res, next) {
 });
 // Set our api routes
 app.use('/', api);
-app.use('/', images);
 app.use('/opinion', personalRoutes);
 
 // Catch all other routes and return the index file
