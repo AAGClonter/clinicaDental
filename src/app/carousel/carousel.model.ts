@@ -1,3 +1,5 @@
-export class Carousel {
-    constructor(name: string, addresse: string){}
+export interface Carousel {
+    slide: string,
+    name: string,
+    addresse: string
 }

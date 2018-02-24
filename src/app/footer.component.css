@@ -1,25 +1,25 @@
 
 @media screen and (min-width: 320px){
-  footer {
-    height: 230px;
-    width: 100%;
-    margin-top: 20px;
-    border-top: 2px solid #ff7373;
-    border-bottom: 3px solid #ff7373;
-  }
+    footer {
+      height: 230px;
+      width: 100%;
+      margin-top: 20px;
+      border-top: 2px solid #ff7373;
+      border-bottom: 3px solid #ff7373;
+    }
 
-  footer p {
-    color: #747573;
-    margin-left: 20px;
-  }
+    footer p {
+      color: #747573;
+      margin-left: 20px;
+    }
 
-  footer h2 {
-  color: #ff7373;
-  font-weight:100;
-  width: 150px;
-  margin-left: 20px;
-  border-bottom: 1px solid #ff7373;
-}
+    footer h2 {
+    color: #ff7373;
+    font-weight:100;
+    width: 150px;
+    margin-left: 25px;
+    border-bottom: 1px solid #ff7373;
+  }
 }
 /*
 @media screen and (min-width: 400px){
@@ -43,7 +43,7 @@
     margin-right: 0;
   }
 }
-*//*
+
 @media screen and (min-width: 480px){
   .viernes {
     margin: 0;
@@ -58,26 +58,16 @@
   }
 
 }
-*/ /*
+*/
 @media screen and (min-width: 660px){
+
   footer {
-    height: 235px;
+    width: 94.8%;
+    margin-left: 16px;
   }
 
-  footer .footer-especialidades {
-    width: 180px;
-    left: 40px;
-  }
-
-  footer .footer-mapa {
-    margin-right: 40px;
-  }
-
-  footer .under-mapa {
-    margin-right: 30px;
-  }
 }
-
+/*
 @media screen and (min-width: 680px) {
   footer .footer-especialidades {
     width: 300px;

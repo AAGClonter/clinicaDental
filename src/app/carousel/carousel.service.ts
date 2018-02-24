@@ -10,8 +10,8 @@ export class CarouselService {
 
     constructor(private http: Http){}
 
-    gettingImages(): Observable<any>{
-        return this.http.get('./carousel-images.json')
+    gettingImages(): Observable<Carousel[]>{
+        return this.http.get('/')
                 .map((response: Response) => response.json())
                 .catch((error: Response) => Observable.throw(error.json()));
     }

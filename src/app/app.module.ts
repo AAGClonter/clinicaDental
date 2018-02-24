@@ -14,7 +14,6 @@ import { EspecialidadesComponent } from './especialidades.component';
 import { FooterComponent } from './footer.component';
 import { OpinionComponent } from './opinion.component';
 import { CarouselComponent } from './carousel/carousel-container.component';
-import { CarouselImageComponent } from './carousel/carousel-image.component';
  
 import { OpinionService } from './opinion.service';
 import { CarouselService } from './carousel/carousel.service';
@@ -29,8 +28,7 @@ import { CarouselService } from './carousel/carousel.service';
     EspecialidadesComponent,
     FooterComponent,
     OpinionComponent,
-    CarouselComponent,
-    CarouselImageComponent
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

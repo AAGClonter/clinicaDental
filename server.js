@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 // Get our API routes
 const api = require('./server/routes/api');
 const personalRoutes = require('./server/personal');
+const imagesApi = require('./server/images');
 
 const app = express();
 
@@ -40,6 +41,7 @@ app.use(function (req, res, next) {
 });
 // Set our api routes
 app.use('/', api);
+app.use('/', images);
 app.use('/opinion', personalRoutes);
 
 // Catch all other routes and return the index file

@@ -111,21 +111,19 @@ h3 {
   }
 
   #myCarousel {
-    width: 100%;
+    margin-top: 40px;
+    height: 350px;
+    margin-left: 15px;
+    width: 94%;
   }
 
   .carousel-inner {
-    height: 400px;
-    margin-top: 36px;
-  }
-
-  #myCarousel {
-    margin-top: 0;
-    height: 400px;
+    height: 350px;
+    margin-top: 50px;
   }
 
   img {
-    height: 400px;
+    height: 350px;
     width: 100%;
   }
 }

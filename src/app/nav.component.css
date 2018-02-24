@@ -13,8 +13,10 @@
   nav {
     height: 45px;
     width: 400px;
-    margin-left: 30px;
+    margin-left: 46px;
+    -moz-margin-left: 46px;
     padding: 0;
+    -moz-padding: 0;
     border-top: 1px solid #ff7373;
     border-bottom: 1px solid #ff7373;
   }
@@ -22,7 +24,9 @@
   nav ul {
     height: 45px;
     margin-left: 0;
+    -moz-margin-left: 0;
     padding: 0;
+    -moz-padding: 0;
   }
 
   ul li {
@@ -33,7 +37,9 @@
   ul li a {
     color: #ff7373;
     padding-bottom: 12px;
+    -moz-padding-bottom: 12px;
     padding-right: 13px;
+    -moz-padding-right: 13px;
   }
 
   ul li a:hover {
@@ -83,31 +89,13 @@
 }
 
 @media screen and (min-width: 660px){
-  h3 {
-    margin-right: 0;
-  }
-
   nav {
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-top: 16px;
-    width: 660px;
-    height: 40px;
-    padding-bottom: 30px;
-  }
-
-   ul {
-    margin-top: 0;
-    margin-left: 20px;
+    padding-bottom: 40px;
     width: 100%;
-    height: 40px;
-    padding-bottom: 0;
-    border-top: 1px solid #ff7373;
-    border-bottom: 1px solid #ff7373;
   }
 
-  nav ul li a {
-    margin-bottom: 20px;
+  nav ul {
+    margin-top: 58px;
   }
 }
 

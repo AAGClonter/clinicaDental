@@ -108,11 +108,14 @@
 
   h3 {
     position: absolute;
+    margin-bottom: 10px;
+    margin-left: 20px;
     block-size: 60px;
   }
 
   #telefono {
     margin-right: 0;
+    width: 220px;
   }
 
   .cuidados {
@@ -123,16 +126,8 @@
 
 @media screen and (min-width: 660px){
   header {
-    width: 100%;
-  }
-
-  body {
-    width: 659px;
-  }
-
-  h1 {
-    padding-right: 60px;
-    margin-left: -30px;
+    width: 94.8%;
+    margin-left: 16px;
   }
 
   h3 {
