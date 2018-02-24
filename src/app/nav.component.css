@@ -12,7 +12,9 @@
 @media screen and (min-width: 320px){
   nav {
     height: 45px;
+    -moz-height: 45px;
     width: 400px;
+    -moz-width: 400px;
     margin-left: 46px;
     -moz-margin-left: 46px;
     padding: 0;
@@ -23,15 +25,16 @@
   
   nav ul {
     height: 45px;
-    margin-left: 0;
-    -moz-margin-left: 0;
-    padding: 0;
-    -moz-padding: 0;
+    -moz-height: 45px;
+    margin: 0 0 0 -40px;
+    -moz-margin: 0 0 0 0;
   }
 
   ul li {
     height: 45px;
+    -moz-height: 45px;
     display: inline-block;
+    -moz-display: inline-block;
   }
 
   ul li a {
