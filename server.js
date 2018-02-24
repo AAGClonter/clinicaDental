@@ -8,7 +8,6 @@ const mongoose = require('mongoose');
 // Get our API routes
 const api = require('./server/routes/api');
 const personalRoutes = require('./server/personal');
-const imagesApi = require('./server/images');
 
 const app = express();
 
