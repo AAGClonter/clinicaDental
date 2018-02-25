@@ -6,6 +6,11 @@
       margin-top: 20px;
       border-top: 2px solid #ff7373;
       border-bottom: 3px solid #ff7373;
+      -moz-height: 230px;
+      -moz-width: 100%;
+      -moz-margin-top: 20px;
+      -moz-border-top: 2px solid #ff7373;
+      -moz-border-bottom: 3px solid #ff7373;
     }
 
     footer p {
