@@ -8,14 +8,17 @@ const mongoose = require('mongoose');
 // Get our API routes
 const api = require('./server/routes/api');
 const personalRoutes = require('./server/personal');
+const imageRoutes = require('./server/image');
 
 const app = express();
 
 // mongodb connection 
+/*
 mongoose.connect("mongodb://inhaled-clonter:Shel4583@ds161833.mlab.com:61833/opiniondb", {
   useMongoClient: true
 });
-
+*/
+mongoose.connect("localhost:27017/opiniondb");
 /*
 mongoose.connect("localhost:27017/signboxesdb");
 */
@@ -40,6 +43,7 @@ app.use(function (req, res, next) {
 });
 // Set our api routes
 app.use('/', api);
+app.use('/', imageRoutes);
 app.use('/opinion', personalRoutes);
 
 // Catch all other routes and return the index file

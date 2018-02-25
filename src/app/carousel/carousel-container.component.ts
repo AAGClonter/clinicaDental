@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CarouselService } from './carousel.service';
-import { Carousel } from './carousel.model';
+import { Image } from './image.model';
 
 @Component({
     selector: 'app-carousel-container',
@@ -9,7 +9,7 @@ import { Carousel } from './carousel.model';
     styleUrls: ['carousel-container.component.css']
 })
 export class CarouselComponent implements OnInit {
-    images: Carousel[];
+    images: Image[];
 
     constructor(private carouselService: CarouselService){}
 
@@ -20,7 +20,7 @@ export class CarouselComponent implements OnInit {
     getImages(){
         this.carouselService.gettingImages()
                             .subscribe(
-                                (images: Carousel[]) => {
+                                (images: Image[]) => {
                                     this.images = images;
                                 }
                             )

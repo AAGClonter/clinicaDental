@@ -1,40 +1,17 @@
 <div class="row">
   <div id="myCarousel" class="carousel slide border" data-ride="carousel">
     <ol class="carousel-indicators">
-      <!--
       <li data-target="#myCarousel"
-          *ngFor="let image of images"
-          data-slide-to={{image.slide}} 
+          *ngFor="let image of images; let idx = index"
+          [ngClass]="{active: idx === 0}"
       ></li>
-      -->
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
     
     <div class="carousel-inner" role="listbox">
-      <!--
-      <div class="carousel-item" *ngFor="let image of images">
-        <img class="d-block img-fluid" src={{image.addresse}} alt={{image.slide}}>
+      <div class="carousel-item" *ngFor="let image of images; let idx = index" [ngClass]="{active: idx === 0}">
+        <img class="d-block img-fluid" src={{image.href}} alt={{image.image}}>
       </div>
-    -->
-      <div class="carousel-item active">
-        <img class="d-block img-fluid" src="../assets/images/carousel-images/concordancia.png" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block img-fluid" src="../assets/images/carousel-images/labios-BN-small.png" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block img-fluid" src="../assets/images/carousel-images/men.png" alt="Third slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block img-fluid" src="../assets/images/carousel-images/perfect.png" alt="Third slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block img-fluid" src="../assets/images/carousel-images/sombrerito.png" alt="Third slide">
-      </div>
+      
     </div>
     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
