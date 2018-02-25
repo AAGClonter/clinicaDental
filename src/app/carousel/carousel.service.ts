@@ -11,7 +11,7 @@ export class CarouselService {
     constructor(private http: Http){}
 
     gettingImages(): Observable<Image[]>{
-        return this.http.get('http://localhost:3000/images')
+        return this.http.get('https://clinica-dental-jane.herokuapp.com/images')
                 .map((response: Response) => response.json().obj)
                 .catch((error: Response) => Observable.throw(error.json()));
     }
