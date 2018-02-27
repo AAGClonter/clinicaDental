@@ -6,8 +6,8 @@ const xoauth2 = require('xoauth2');
 const Opinion = require('../models/opinion');
 const Email = require('../models/email');
 
-const clientID = '459612530252-22upbserlv47oc95utdhi11nq2o809bm.apps.googleusercontent.com';
-const clientSecret = 'nNXxJtQT5fjsmwu1GrwtDlFg';
+//const clientID = '459612530252-22upbserlv47oc95utdhi11nq2o809bm.apps.googleusercontent.com';
+//const clientSecret = 'nNXxJtQT5fjsmwu1GrwtDlFg';
 
 router.post('/', function(req, res, next){
     if (req.body.name &&
@@ -43,20 +43,18 @@ router.post('/', function(req, res, next){
 
             var smtpTransport = nodemailer.createTransport({
                     service: "gmail",
-                    host: "smtp.gmail.com",
+                    host: "gsmtp.gmail.com",
                     port: 465,
                     secure: true,
                     auth: {
-                        xoauth2: xoauth2.createXOAuth2Generator({
+                            type: "OAuth2",
                             user: "sheldoneinsestein@gmail.com",
                             //pass: "shel4583",
-                            clientId: "459612530252-22upbserlv47oc95utdhi11nq2o809bm.apps.googleusercontent.com",
-                            clientSecret: "nNXxJtQT5fjsmwu1GrwtDlFg",
-                            //accessToken: "ya29.GltuBXRUJ3YtkJ9anWGwzUh-FWhjCTN7otF_iDM--9Ehu_dnwK1B6ACEu0nMWbY8XCNaqjM3XalPlzDSBRdh_zAFTRMkx-Oov5z5xN326jYsKiUp7Lefnsp1HHjx", 
-                            refreshToken: "1/g0hu6G9anYfRG_-dpj1SztDZdVhDcgn9XiZpdCDnJ6yl67KKRHOorJrV4heuB47j"
-                            //refreshToken: "1/Ft-3SGTku37rn--TtNjU27jn_JJvKlAi7y78ZC_NtT0",
-                            //expires: 3600
-                        })
+                            clientId: "459612530252-g9n6b63uo94kn61jta4k97vrvddm64f5.apps.googleusercontent.com",
+                            clientSecret: "lBg_9wgrjof-lcZ07y2RM777",
+                            accessToken: "ya29.GltuBbkjLN1FDtPk8h5f9_7OTGO5aJ0CrLoxojx10hc3cRaYbJa9n-8PganlnA1h46GQIZQckj9CSSN8l3w1Y_vHR_vvJWhho18Qxg30vijwj1NfDkU4wb09hIxE",
+                            refreshToken: "1/Rjxbr3HpoBka4sXOGUWcwNB_05w5DNkz-MpVsqKbH3iqobAGWfap36Eu2NJ9vElG"
+                            
                     }
                 });
                 smtpTransport.verify(function(error, success) {
