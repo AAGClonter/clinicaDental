@@ -13,7 +13,7 @@ export class OpinionService {
     sendOpinion(opinion: Opinion, email: Email) {
         const body = JSON.stringify(opinion);
         const headers = new Headers({'Content-type': 'application/json'});
-        return this.http.post('https://clinica-dental-jane.herokuapp.com/opinion', body, {headers: headers})
+        return this.http.post('http://localhost:3000/opinion', body, {headers: headers})
                     .map((response: Response) => {
                         const result = response.json();
                         const opinion = new Opinion(

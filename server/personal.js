@@ -48,13 +48,15 @@ router.post('/', function(req, res, next){
                     secure: true,
                     auth: {
                             type: "OAuth2",
-                            user: "sheldoneinsestein@gmail.com",
-                            //pass: "shel4583",
-                            clientId: "459612530252-g9n6b63uo94kn61jta4k97vrvddm64f5.apps.googleusercontent.com",
-                            clientSecret: "lBg_9wgrjof-lcZ07y2RM777",
-                            accessToken: "ya29.GltuBbkjLN1FDtPk8h5f9_7OTGO5aJ0CrLoxojx10hc3cRaYbJa9n-8PganlnA1h46GQIZQckj9CSSN8l3w1Y_vHR_vvJWhho18Qxg30vijwj1NfDkU4wb09hIxE",
-                            refreshToken: "1/Rjxbr3HpoBka4sXOGUWcwNB_05w5DNkz-MpVsqKbH3iqobAGWfap36Eu2NJ9vElG"
-                            
+                            user: "sheldoneinsestein@gmail.com"    
+                    }
+                });
+                smtpTransport.set('oauth2_provision_cb', (user, renew, callback)=>{
+                    let accessToken = userTokens[user];
+                    if(!accessToken){
+                        return callback(new Error('Unknown user'));
+                    }else{
+                        return callback(null, accessToken);
                     }
                 });
                 smtpTransport.verify(function(error, success) {
@@ -64,14 +66,6 @@ router.post('/', function(req, res, next){
                             console.log('Server is ready to take our messages');
                     }
 });
-                /*smtpTransport.set('oauth2_provision_cb', (user, renew, callback)=>{
-                    let accessToken = userTokens[user];
-                    if(!accessToken){
-                        return callback(new Error('Unknown user'));
-                    }else{
-                        return callback(null, accessToken);
-                    }
-                });*/
                 //Creating mail optinos
                 var mailOptions = {
                     from: email.email, // sender address
