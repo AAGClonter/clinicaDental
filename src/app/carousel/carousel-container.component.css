@@ -112,13 +112,12 @@ h3 {
 
   #myCarousel {
     margin-top: 40px;
-    height: 350px;
+    height: 300px;
     margin-left: 15px;
     width: 94%;
   }
 
   .carousel-inner {
-    height: 350px;
     margin-top: 50px;
   }
 
