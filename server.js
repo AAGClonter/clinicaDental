@@ -10,6 +10,7 @@ const api = require('./server/routes/api');
 const personalRoutes = require('./server/personal');
 const imageRoutes = require('./server/image');
 const citasRoutes = require('./server/cita');
+const userRoutes = require('./server/user');
 
 const app = express();
 
@@ -44,6 +45,7 @@ app.use('/', api);
 app.use('/', imageRoutes);
 app.use('/opinion', personalRoutes);
 app.use('/citas', citasRoutes);
+app.use('/user', userRoutes);;
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
