@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router;
+const router = express.Router();
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const config = require('./config');
@@ -19,7 +19,7 @@ router.post('/signup', (req, res, next) => {
         securityPasscode: req.body.securityPasscode
     });
 
-    let token = jwt.sign({id: user._id}, config.secret, expiresIn: 86400)
+    let token = jwt.sign({id: user._id}, config.secret, {expiresIn: 86400});
     newUser.save((err, user) => {
         if (err) return next(err);
         res.status(200).json({
@@ -86,3 +86,5 @@ router.post('/login', (req, res, next) => {
         });
     });
 });
+
+module.exports = router;

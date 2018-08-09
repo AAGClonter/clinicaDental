@@ -4,6 +4,7 @@ const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const morgan = require('morgan');
 
 // Get our API routes
 const api = require('./server/routes/api');
@@ -29,6 +30,9 @@ db.on('error', console.error.bind(console, 'connection error:'));
 // Parsers for POST data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+// Morgan
+app.use(morgan('dev'));
 
 // Point static path to dist
 app.use(express.static(path.join(__dirname, 'dist')));

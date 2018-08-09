@@ -1,11 +1,11 @@
 const express = require('express');
-const router = express.Router;
+const router = express.Router();
 
 const Cita = require('../models/cita');
 const DoneCita = require('../models/donecita');
 
 // GET request for citas
-router.get('/citas', (req, res, next) => {
+router.get('/', (req, res, next) => {
     Cita.find({}, (err, citas) => {
         if (err) return next(err);
         res.status(200).json(citas);
@@ -27,7 +27,7 @@ router.post('/', (req, res, next) => {
 });
 
 // PUT request to update or change cita already saved
-router.put('/:id/completed', (req, res, next) => {
+router.put('/:id/update', (req, res, next) => {
     Cita.findById(req.params.id, (err, cita) => {
         if (err) return next(err);
         if (!cita) {
@@ -50,30 +50,10 @@ router.put('/:id/completed', (req, res, next) => {
 
 // DELETE request and saving done cita to another collection
 router.delete('/:id/completed', (req, res, next) => {
-    Cita.findById(req.params.id, (err, cita) => {
+    Cita.findByIdAndRemove(req.params.id, (err, cita) => {
         if (err) return next(err);
-        if (!cita) {
-            return res.status(404).json({
-                message: 'An error occurred',
-                error: { message: 'Cita could not be found'}
-            });
-        }
-
-        let newDone = new DoneCita({
-            pacient: cita.pacient,
-            reason: cita.reason,
-            completed: cita.completed
-        });
-
-        cita.remove((err, cita) => {
-            if (err) return next(err);
-            newDone.save((err, done) => {
-                if (err) return next(err);
-                res.status(200).json({
-                    citaRemoved: cita,
-                    archived: done
-                });
-            });
-        });
+        res.status(200).json(cita);
     });
 });
+
+module.exports = router;
