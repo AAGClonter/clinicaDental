@@ -16,10 +16,10 @@ router.post('/signup', (req, res, next) => {
         lastName: req.body.lastName,
         email: req.body.email,
         password: bcrypt.hashSync(req.body.password, 8),
-        securityPasscode: req.body.securityPasscode
+        securityPasscode: bcrypt.hashSync(req.body.securityPasscode)
     });
 
-    let token = jwt.sign({id: user._id}, config.secret, {expiresIn: 86400});
+    let token = jwt.sign({id: newUser._id}, config.secret, {expiresIn: 86400});
     newUser.save((err, user) => {
         if (err) return next(err);
         res.status(200).json({
@@ -84,6 +84,13 @@ router.post('/login', (req, res, next) => {
             auth: true,
             token: token
         });
+    });
+});
+
+router.get('/logout', (req, res) => {
+    res.status(200).json({
+        auth: false,
+        token: null
     });
 });
 
